@@ -1,0 +1,68 @@
+---
+title: "DM-assignment"
+author: "Leo Song"
+date: "2024-02-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library(RSQLite)
+conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
+
+
+# Create Seller table
+dbExecute(conn, 'CREATE TABLE if not exists Seller (Seller_id INT PRIMARY KEY, Seller_name VARCHAR(255) NOT NULL, Seller_email VARCHAR(255) NOT NULL UNIQUE, Street_name VARCHAR(255), City VARCHAR(100), State VARCHAR(100), Country VARCHAR(100), Phone VARCHAR(20))')
+
+# Create Product table
+dbExecute(conn, 'CREATE TABLE if not exists Product (Product_id INT PRIMARY KEY, Category_id INT NOT NULL, Seller_id INT NOT NULL, Name VARCHAR(255) NOT NULL, Description TEXT, Price DECIMAL(10, 2) NOT NULL, Quantity_available INT NOT NULL, FOREIGN KEY (Category_id) REFERENCES Categories(Category_id), FOREIGN KEY (Seller_id) REFERENCES Seller(Seller_id))')
+
+# Create Customers table
+dbExecute(conn, 'CREATE TABLE if not exists Customers (Customer_id INT PRIMARY KEY, Password VARCHAR(255) NOT NULL, Email VARCHAR(255) NOT NULL UNIQUE, First_Name VARCHAR(100) NOT NULL, Last_Name VARCHAR(100) NOT NULL, Date_of_birth DATE, Gender CHAR(1), Street_name VARCHAR(255), House_Number VARCHAR(50), Apartment VARCHAR(50), City VARCHAR(100), State VARCHAR(100), Country VARCHAR(100), Phone VARCHAR(20))')
+
+# Create Categories table
+dbExecute(conn, 'CREATE TABLE if not exists Categories (Category_id INT PRIMARY KEY, Name VARCHAR(255) NOT NULL, Description TEXT)')
+
+# Create Cart table
+dbExecute(conn, 'CREATE TABLE if not exists Cart (Cart_id INT PRIMARY KEY, Customer_id INT NOT NULL, Amount DECIMAL(10, 2) NOT NULL, FOREIGN KEY (Customer_id) REFERENCES Customers(Customer_id))')
+
+# Create Cart_items table
+dbExecute(conn, 'CREATE TABLE if not exists Cart_items (Cart_items_id INT PRIMARY KEY, Cart_id INT NOT NULL, Product_id INT NOT NULL, Quantity INT NOT NULL, Price DECIMAL(10, 2) NOT NULL, FOREIGN KEY (Cart_id) REFERENCES Cart(Cart_id), FOREIGN KEY (Product_id) REFERENCES Product(Product_id))')
+
+# Create Payment table
+dbExecute(conn, 'CREATE TABLE if not exists Payment (Payment_id INT PRIMARY KEY, Cart_id INT NOT NULL, Type VARCHAR(50), Status VARCHAR(50), Date_and_Time DATETIME, FOREIGN KEY (Cart_id) REFERENCES Cart(Cart_id))')
+
+# Create Review table
+dbExecute(conn, 'CREATE TABLE if not exists Review (Review_id INT PRIMARY KEY, Customer_id INT NOT NULL, Product_id INT NOT NULL, Comment TEXT, Rating INT NOT NULL, Date_and_Time DATETIME, FOREIGN KEY (Customer_id) REFERENCES Customers(Customer_id), FOREIGN KEY (Product_id) REFERENCES Product(Product_id))')
+
+
+
+# List all tables in the database connection
+tables <- dbListTables(conn)
+
+# Print the list of table names
+print(tables)
+
+#  close the database connection 
+dbDisconnect(conn)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
