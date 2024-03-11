@@ -36,11 +36,14 @@ jobs:
 
 # Providing the link to file to execute
     - name: Run data validation script
-      run: Validation_Analysis/data_validation.R
+      run: |
+          Rscript Validation_Analysis/data_validation.R
     - name: Update database with new data
-      run: Validation_Analysis/Rscript path/to/your/update_database.R
+      run: |
+          Rscript Validation_Analysis/Rscript path/to/your/update_database.R
     - name: Run basic data analysis
-      run: Validation_Analysis/Rscript path/to/your/data_analysis.R
+      run: |
+          Rscript Validation_Analysis/Rscript path/to/your/data_analysis.R
 
 
 # Commit changes
