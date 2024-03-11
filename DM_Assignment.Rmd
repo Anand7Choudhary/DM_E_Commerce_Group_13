@@ -21,28 +21,47 @@ conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
 
 
 # Create Seller table
-dbExecute(conn, 'CREATE TABLE if not exists Seller (Seller_id INT PRIMARY KEY, Seller_name VARCHAR(255) NOT NULL, Seller_email VARCHAR(255) NOT NULL UNIQUE, Street_name VARCHAR(255), City VARCHAR(100), State VARCHAR(100), Country VARCHAR(100), Phone VARCHAR(20))')
+dbExecute(conn, 'CREATE TABLE if not exists Seller (seller_id VARCHAR(255)  PRIMARY KEY, seller_name VARCHAR(255) NOT NULL, seller_email VARCHAR(255) NOT NULL UNIQUE,  seller_city VARCHAR(100), seller_country VARCHAR(100),seller_phone_no VARCHAR(20))')
 
 # Create Product table
-dbExecute(conn, 'CREATE TABLE if not exists Product (Product_id INT PRIMARY KEY, Category_id INT NOT NULL, Seller_id INT NOT NULL, Name VARCHAR(255) NOT NULL, Description TEXT, Price DECIMAL(10, 2) NOT NULL, Quantity_available INT NOT NULL, FOREIGN KEY (Category_id) REFERENCES Categories(Category_id), FOREIGN KEY (Seller_id) REFERENCES Seller(Seller_id))')
+dbExecute(conn, 'CREATE TABLE if not exists Product (product_id VARCHAR(255)  PRIMARY KEY, category_id VARCHAR(255)  NOT NULL, seller_id VARCHAR(255)  NOT NULL, product_name VARCHAR(255) NOT NULL, product_desc TEXT,product_price DECIMAL(10, 2) NOT NULL, quantity_available INT NOT NULL, FOREIGN KEY (category_id) REFERENCES Categories(category_id), FOREIGN KEY (seller_id) REFERENCES Seller(seller_id))')
 
 # Create Customers table
-dbExecute(conn, 'CREATE TABLE if not exists Customers (Customer_id INT PRIMARY KEY, Password VARCHAR(255) NOT NULL, Email VARCHAR(255) NOT NULL UNIQUE, First_Name VARCHAR(100) NOT NULL, Last_Name VARCHAR(100) NOT NULL, Date_of_birth DATE, Gender CHAR(1), Street_name VARCHAR(255), House_Number VARCHAR(50), Apartment VARCHAR(50), City VARCHAR(100), State VARCHAR(100), Country VARCHAR(100), Phone VARCHAR(20))')
+dbExecute(conn, 'CREATE TABLE if not exists Customers (customer_id VARCHAR(255)  PRIMARY KEY, cust_password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE, first_name VARCHAR(100) NOT NULL, last_name VARCHAR(100) NOT NULL, date_of_birth DATE, gender CHAR(1), street VARCHAR(255), house_number VARCHAR(50), city VARCHAR(100), country VARCHAR(100), phone_number VARCHAR(20))')
 
 # Create Categories table
-dbExecute(conn, 'CREATE TABLE if not exists Categories (Category_id INT PRIMARY KEY, Name VARCHAR(255) NOT NULL, Description TEXT)')
+dbExecute(conn, 'CREATE TABLE if not exists Categories (category_id VARCHAR(255)  PRIMARY KEY, category_name VARCHAR(255) NOT NULL, category_desc TEXT)')
 
-# Create Cart table
-dbExecute(conn, 'CREATE TABLE if not exists Cart (Cart_id INT PRIMARY KEY, Customer_id INT NOT NULL, Amount DECIMAL(10, 2) NOT NULL, FOREIGN KEY (Customer_id) REFERENCES Customers(Customer_id))')
-
-# Create Cart_items table
-dbExecute(conn, 'CREATE TABLE if not exists Cart_items (Cart_items_id INT PRIMARY KEY, Cart_id INT NOT NULL, Product_id INT NOT NULL, Quantity INT NOT NULL, Price DECIMAL(10, 2) NOT NULL, FOREIGN KEY (Cart_id) REFERENCES Cart(Cart_id), FOREIGN KEY (Product_id) REFERENCES Product(Product_id))')
+# Create Product_payment_relationship
+dbExecute(conn, 'CREATE TABLE IF NOT EXISTS Product_payment_relationship (
+    product_id VARCHAR(255),
+    payment_id VARCHAR(255),
+    quantity INT NOT NULL,
+    PRIMARY KEY (product_id, payment_id),
+    FOREIGN KEY (product_id) REFERENCES Product(product_id),
+    FOREIGN KEY (payment_id) REFERENCES Payment(payment_id)
+)')
 
 # Create Payment table
-dbExecute(conn, 'CREATE TABLE if not exists Payment (Payment_id INT PRIMARY KEY, Cart_id INT NOT NULL, Type VARCHAR(50), Status VARCHAR(50), Date_and_Time DATETIME, FOREIGN KEY (Cart_id) REFERENCES Cart(Cart_id))')
+dbExecute(conn, 'CREATE TABLE if not exists Payment (
+    payment_id VARCHAR(255) PRIMARY KEY,  
+    payment_type VARCHAR(50), 
+    payment_status VARCHAR(50), 
+    date_time DATETIME,
+    card_number VARCHAR(20)
+)')
 
-# Create Review table
-dbExecute(conn, 'CREATE TABLE if not exists Review (Review_id INT PRIMARY KEY, Customer_id INT NOT NULL, Product_id INT NOT NULL, Comment TEXT, Rating INT NOT NULL, Date_and_Time DATETIME, FOREIGN KEY (Customer_id) REFERENCES Customers(Customer_id), FOREIGN KEY (Product_id) REFERENCES Product(Product_id))')
+#CREATE Customers_review_Products_relationship TABLE
+dbExecute(conn, 'CREATE TABLE if not exists Customers_review_Products_relationship (
+    customer_id VARCHAR(255) NOT NULL,
+    product_id VARCHAR(255) NOT NULL,
+    comment TEXT,
+    rating INT NOT NULL,
+    date_time DATETIME,
+    PRIMARY KEY (customer_id, product_id),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (product_id) REFERENCES Product(product_id)
+)')
 
 
 
@@ -65,4 +84,202 @@ You can also embed plots, for example:
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r get all ID}
+library(DBI)
+library(charlatan)
+library(stringi)
+library(RSQLite)
+library(dplyr)
+
+# Function to generate unique IDs with a specific word and fixed length
+generate_unique_ids_with_prefix <- function(n, word,lenOfId) {
+  unique_ids <- character(n)
+  # Loop through the number of IDs we need to generate
+  for (i in 1:n) {
+    is_unique <- FALSE  # Initialize a flag to check uniqueness
+    while (!is_unique) {
+      # Generate a 6-character random alphanumeric string
+      random_string <- stri_rand_strings(1, lenOfId-4, pattern = "[a-zA-Z0-9]")
+      full_id <- paste0(word, random_string)
+      # Check if this ID is already in our list of unique IDs
+      if (!full_id %in% unique_ids) {
+        unique_ids[i] <- full_id  # If unique, add it to the list
+        is_unique <- TRUE  # Set the flag to true to exit the loop
+      }
+    }
+  }
+  return(unique_ids)
+}
+
+# Set a seed for reproducibility
+set.seed(1234)  
+# Assuming n_sellers, n_customers, n_categories, n_products are predefined
+n_sellers <- 300
+n_customers <- 300
+n_categories <- 25
+n_products <- 94
+n_payments <- 1000
+
+
+
+# Example usage for 5 Seller IDs
+seller_ids <- generate_unique_ids_with_prefix(n_sellers, "selr_",10)
+print(seller_ids)
+
+customer_ids <- generate_unique_ids_with_prefix(n_customers, "cust_",10)
+print(customer_ids)
+
+category_ids <- generate_unique_ids_with_prefix(n_categories, "catg_",10)
+print(category_ids)
+
+product_ids <- generate_unique_ids_with_prefix(n_products, "prod_",10)
+print(product_ids)
+
+
+payment_ids <- generate_unique_ids_with_prefix(n_payments, "pytm_",10)
+print(payment_ids)
+
+
+```
+
+```{r prepare data}
+
+
+seller_data <- read.csv("seller.csv")
+seller_data$seller_id<-seller_ids
+
+
+# Change the column name from 'seller_state' to 'seller_country'
+names(seller_data)[names(seller_data) == "seller_state"] <- "seller_country"
+
+customer_data <- read.csv("customer.csv")
+customer_data$customer_id<-customer_ids
+# check whether email is unique
+unique_email_count <- length(unique(customer_data$email))# email is unique
+customer_review_product_relationship<-read.csv("reviews.csv")
+
+
+
+# Generate all possible combinations of product_id and customer_id
+combinations <- expand.grid(product_id = product_ids, customer_id = customer_ids)
+
+# Ensure there are enough combinations to satisfy the number of rows in reviews.csv
+if (nrow(customer_review_product_relationship) <= nrow(combinations)) {
+  # Randomly select from all unique combinations
+  selected_combinations <- combinations[sample(nrow(combinations), size = nrow(customer_review_product_relationship), replace = FALSE), ]
+  
+  # Assign product_id and customer_id to customer_review_product_relationship
+  customer_review_product_relationship$product_id <- selected_combinations$product_id
+  customer_review_product_relationship$customer_id <- selected_combinations$customer_id
+} else {
+  # If there are not enough combinations, print an error or warning
+  print("Not enough unique combinations of product_id and customer_id to assign to each row.")
+}
+# Check for duplicates based on 'product_id' and 'customer_id'
+duplicates <- duplicated(customer_review_product_relationship[c("product_id", "customer_id")])
+# Count the number of duplicates
+num_duplicates <- sum(duplicates)
+
+# Print the number of duplicate rows found
+print(paste("Number of duplicate rows:", num_duplicates))
+
+
+category_data<-read.csv("categories.csv")
+category_data$category_id_new<-category_ids
+
+product_data<-read.csv("products.csv")
+# Assuming product_data and category_data are already loaded into your R environment
+
+# Perform a left join to match each product with its corresponding category,
+# and then select the new category ID to replace the old one.
+product_data_updated <- product_data %>%
+  left_join(category_data, by = "category_id") %>%
+  mutate(category_id = category_id_new) %>%
+  select(-category_id_new) # Assuming you want to remove the 'category_id_new' column after update
+
+# Now, product_data_updated contains products with their category IDs updated to category_id_new where applicable
+
+product_data$category_id<-product_data_updated$category_id
+product_data$seller_id<- sample(seller_ids, size = nrow(product_data), replace = TRUE)
+product_data$product_id<- product_ids
+#change  category id
+category_data$category_id<-category_ids
+category_data <- subset(category_data, select = -category_id_new)
+payment_data<-read.csv("payment.csv")
+payment_data$payment_id<-payment_ids
+#load Product_payment_relationship
+Product_payment_relationship_data <- read.csv("is_in.csv")
+# Generate all possible combinations of product_id and payment_id
+combinations <- expand.grid(product_id = product_ids, payment_id = payment_ids)
+
+# Ensure there are enough combinations to satisfy the number of rows in Product_payment_relationship_data
+if (nrow(Product_payment_relationship_data) <= nrow(combinations)) {
+  # Randomly select from all unique combinations to match the number of rows in Product_payment_relationship_data
+  selected_combinations <- combinations[sample(nrow(combinations), size = nrow(Product_payment_relationship_data), replace = FALSE), ]
+  
+  # Assign product_id and payment_id to Product_payment_relationship_data
+  Product_payment_relationship_data$product_id <- selected_combinations$product_id
+  Product_payment_relationship_data$payment_id <- selected_combinations$payment_id
+} else {
+  # Printing Error if there are not enough combinations
+  print("Not enough unique combinations of product_id and payment_id to assign to each row in Product_payment_relationship_data.")
+}
+
+# Check for duplicates based on 'product_id' and 'payment_id'
+duplicates <- duplicated(Product_payment_relationship_data[c("product_id", "payment_id")])
+
+# Count the number of duplicates
+num_duplicates <- sum(duplicates)
+
+# Print the number of duplicate rows found
+print(paste("Number of duplicate rows:", num_duplicates))
+
+```
+
+```{r import data}
+
+
+library(RSQLite)
+
+conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
+
+# Import seller_data into Seller table
+dbWriteTable(conn, "Seller", seller_data, append = TRUE, overwrite = FALSE)
+
+# Import customer_data into Customers table
+dbWriteTable(conn, "Customers", customer_data, append = TRUE, overwrite = FALSE)
+
+# Import category_data into Categories table
+dbWriteTable(conn, "Categories", category_data, append = TRUE, overwrite = FALSE)
+
+# Import product_data into Product table
+dbWriteTable(conn, "Product", product_data, append = TRUE, overwrite = FALSE)
+
+# Import payment_data into Payment table
+dbWriteTable(conn, "Payment", payment_data, append = TRUE, overwrite = FALSE)
+
+# Import customer_review_product_relationship into Customers_review_Products_relationship table
+dbWriteTable(conn, "Customers_review_Products_relationship", customer_review_product_relationship, append = TRUE, overwrite = FALSE)
+
+# Import Product_payment_relationship_data into Product_payment_relationship table
+dbWriteTable(conn, "Product_payment_relationship", Product_payment_relationship_data, append = TRUE, overwrite = FALSE)
+#  close the database connection 
+dbDisconnect(conn)
+
+```
+
+```{r check data in database}
+# Reconnect to the database 
+conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
+
+# Load the entire 'Seller' table into an R data frame
+seller_data_df <- dbReadTable(conn, "Seller")
+
+# View the data frame
+head(seller_data_df) # Display the first few rows
+
+# When done, don't forget to disconnect
+dbDisconnect(conn)
+
+```
+
