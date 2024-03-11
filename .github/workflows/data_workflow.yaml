@@ -40,10 +40,10 @@ jobs:
           Rscript Validation_Analysis/data_validation.R
     - name: Update database with new data
       run: |
-          Rscript Validation_Analysis/Rscript path/to/your/update_database.R
+          Rscript Validation_Analysis/update_database.R
     - name: Run basic data analysis
       run: |
-          Rscript Validation_Analysis/Rscript path/to/your/data_analysis.R
+          Rscript Validation_Analysis/data_analysis.R
 
 
 # Commit changes
@@ -51,7 +51,7 @@ jobs:
       run: |
         git config --global user.email "raschoudhary879@gmail.com"
         git config --global user.name "Anand7Choudhary"
-        git add -f path/to/your/database_file.db path/to/other/modified/files
+        git add .
         git commit -m "Update database and analysis results" || echo "No changes to commit"
         
     - name: Push changes
