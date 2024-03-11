@@ -1,5 +1,5 @@
 # Define the path to the README file
-readme_path <- "../README.md"
+readme_path <- "README.md"
 
 # Read the current content of the README
 readme_content <- readLines(readme_path, warn = FALSE)
