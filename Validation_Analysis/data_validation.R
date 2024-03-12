@@ -9,7 +9,7 @@ timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
 
 # Define the message to append, including the name of the script
 script_name <- "data_val" # Replace with your actual script name
-update_message <- paste0("- ", script_name, " last run at ", timestamp)
+update_message <- paste0("- ", script_name, " last run at - ", timestamp)
 
 # Append the update message to the README content
 readme_content <- c(readme_content, update_message)
