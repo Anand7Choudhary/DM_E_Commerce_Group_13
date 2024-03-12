@@ -3,7 +3,8 @@ name: Data Operations and Analysis Workflow
 on:
   push:
     branches: [ main ]
-  pull_request_target:
+  pull_request:
+  #pull_request_target:
   schedule:
     # Runs every day at 00:00
     - cron: '0 0 * * *'
