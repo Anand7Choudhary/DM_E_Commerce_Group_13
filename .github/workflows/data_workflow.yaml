@@ -31,7 +31,7 @@ jobs:
 
 # Installing the necessary Packages  
     - name: Install R packages
-      run: Rscript -e 'install.packages(c("DBI", "RSQLite", "ggplot2", "lubridate"), dependencies = TRUE)'
+      run: Rscript -e 'install.packages(c("DBI", "RSQLite", "ggplot2", "lubridate","readr"), dependencies = TRUE)'
 
 
 # Providing the link to file to execute
