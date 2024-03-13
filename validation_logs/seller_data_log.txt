@@ -1,0 +1,9 @@
+Rows with Null Value (seller_name):
+, bbilsford0@intel.com, 319-296-8229, United Kingdom, Merton, selr_7cbcrd
+
+Rows with invalid email format in attribute seller_email:
+Corkery LLC, wca2@ny@times.com, 597-299-8102, United Kingdom, Glasgow, selr_HvIpHG
+
+Rows with invalid phone format (seller_phone_no):
+Wilkinson, Beier and Ebert, lschimke5@nih.gov, 999-874-4492/, United Kingdom, Ford, selr_SGIVBl
+

@@ -7,13 +7,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+source("Validation_Analysis/data_validation.R")
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r}
 library(RSQLite)
@@ -21,10 +17,26 @@ conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
 
 
 # Create Seller table
-dbExecute(conn, 'CREATE TABLE if not exists Seller (seller_id VARCHAR(255)  PRIMARY KEY, seller_name VARCHAR(255) NOT NULL, seller_email VARCHAR(255) NOT NULL UNIQUE,  seller_city VARCHAR(100), seller_country VARCHAR(100),seller_phone_no VARCHAR(20))')
+dbExecute(conn, 'CREATE TABLE if not exists Seller (
+          seller_id VARCHAR(255)  PRIMARY KEY,
+          seller_name VARCHAR(255) NOT NULL,
+          seller_email VARCHAR(255) NOT NULL UNIQUE,
+          seller_city VARCHAR(100),
+          seller_country VARCHAR(100),
+          seller_phone_no VARCHAR(20)
+          )')
 
 # Create Product table
-dbExecute(conn, 'CREATE TABLE if not exists Product (product_id VARCHAR(255)  PRIMARY KEY, category_id VARCHAR(255)  NOT NULL, seller_id VARCHAR(255)  NOT NULL, product_name VARCHAR(255) NOT NULL, product_desc TEXT,product_price DECIMAL(10, 2) NOT NULL, quantity_available INT NOT NULL, FOREIGN KEY (category_id) REFERENCES Categories(category_id), FOREIGN KEY (seller_id) REFERENCES Seller(seller_id))')
+dbExecute(conn, 'CREATE TABLE if not exists Product (
+          product_id VARCHAR(255)  PRIMARY KEY,
+          category_id VARCHAR(255)  NOT NULL,
+          seller_id VARCHAR(255)  NOT NULL,
+          product_name VARCHAR(255) NOT NULL,
+          product_desc TEXT,product_price DECIMAL(10, 2) NOT NULL,
+          quantity_available INT NOT NULL,
+          FOREIGN KEY (category_id) REFERENCES Categories(category_id),
+          FOREIGN KEY (seller_id) REFERENCES Seller(seller_id)
+          )')
 
 # Create Customers table
 dbExecute(conn, 'CREATE TABLE if not exists Customers (customer_id VARCHAR(255)  PRIMARY KEY, cust_password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE, first_name VARCHAR(100) NOT NULL, last_name VARCHAR(100) NOT NULL, date_of_birth DATE, gender CHAR(1), street VARCHAR(255), house_number VARCHAR(50), city VARCHAR(100), country VARCHAR(100), phone_number VARCHAR(20))')
@@ -44,11 +56,13 @@ dbExecute(conn, 'CREATE TABLE IF NOT EXISTS Product_payment_relationship (
 
 # Create Payment table
 dbExecute(conn, 'CREATE TABLE if not exists Payment (
-    payment_id VARCHAR(255) PRIMARY KEY,  
+    payment_id VARCHAR(255) PRIMARY KEY, 
+    customer_id VARCHAR(255),
     payment_type VARCHAR(50), 
     payment_status VARCHAR(50), 
     date_time DATETIME,
-    card_number VARCHAR(20)
+    card_number VARCHAR(20),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 )')
 
 #CREATE Customers_review_Products_relationship TABLE
@@ -74,14 +88,6 @@ print(tables)
 #  close the database connection 
 dbDisconnect(conn)
 
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
 
 ```{r get all ID}
@@ -124,39 +130,32 @@ n_payments <- 1000
 
 # Example usage for 5 Seller IDs
 seller_ids <- generate_unique_ids_with_prefix(n_sellers, "selr_",10)
-print(seller_ids)
 
 customer_ids <- generate_unique_ids_with_prefix(n_customers, "cust_",10)
-print(customer_ids)
 
 category_ids <- generate_unique_ids_with_prefix(n_categories, "catg_",10)
-print(category_ids)
 
 product_ids <- generate_unique_ids_with_prefix(n_products, "prod_",10)
-print(product_ids)
-
 
 payment_ids <- generate_unique_ids_with_prefix(n_payments, "pytm_",10)
-print(payment_ids)
-
 
 ```
 
 ```{r prepare data}
 
 
-seller_data <- read.csv("seller.csv")
+seller_data <- read.csv("data_file/seller.csv")
 seller_data$seller_id<-seller_ids
 
 
 # Change the column name from 'seller_state' to 'seller_country'
 names(seller_data)[names(seller_data) == "seller_state"] <- "seller_country"
 
-customer_data <- read.csv("customer.csv")
+customer_data <- read.csv("data_file/customer.csv")
 customer_data$customer_id<-customer_ids
 # check whether email is unique
 unique_email_count <- length(unique(customer_data$email))# email is unique
-customer_review_product_relationship<-read.csv("reviews.csv")
+customer_review_product_relationship<-read.csv("data_file/reviews.csv")
 
 
 
@@ -184,10 +183,10 @@ num_duplicates <- sum(duplicates)
 print(paste("Number of duplicate rows:", num_duplicates))
 
 
-category_data<-read.csv("categories.csv")
+category_data<-read.csv("data_file/categories.csv")
 category_data$category_id_new<-category_ids
 
-product_data<-read.csv("products.csv")
+product_data<-read.csv("data_file/products.csv")
 # Assuming product_data and category_data are already loaded into your R environment
 
 # Perform a left join to match each product with its corresponding category,
@@ -205,25 +204,38 @@ product_data$product_id<- product_ids
 #change  category id
 category_data$category_id<-category_ids
 category_data <- subset(category_data, select = -category_id_new)
-payment_data<-read.csv("payment.csv")
+payment_data<-read.csv("data_file/payment.csv")
 payment_data$payment_id<-payment_ids
+payment_data$customer_id<-sample(customer_ids, size = nrow(payment_data), replace = TRUE)
 #load Product_payment_relationship
-Product_payment_relationship_data <- read.csv("is_in.csv")
+Product_payment_relationship_data <- read.csv("data_file/is_in.csv")
 # Generate all possible combinations of product_id and payment_id
-combinations <- expand.grid(product_id = product_ids, payment_id = payment_ids)
+#
+payment_id_filter <- payment_data %>%
+  filter(payment_status %in% c("Success", "Pending")) %>%
+  select(payment_id)
+product_id_filter<-product_ids[1:50]
+product_id_new<-product_ids[51:94]
 
-# Ensure there are enough combinations to satisfy the number of rows in Product_payment_relationship_data
-if (nrow(Product_payment_relationship_data) <= nrow(combinations)) {
-  # Randomly select from all unique combinations to match the number of rows in Product_payment_relationship_data
-  selected_combinations <- combinations[sample(nrow(combinations), size = nrow(Product_payment_relationship_data), replace = FALSE), ]
-  
+
+# Step 1: Randomly assign a product_id from product_id_filter to each payment_id
+set.seed(123) # Ensure reproducibility of the results
+initial_assignments <- payment_id_filter %>%
+  mutate(product_id = sample(product_id_filter, size = n(), replace = TRUE))
+
+# Step 2: Generate all possible combinations of product_id_new and payment_id_filter, then randomly select 111 combinations
+all_new_combinations <- expand.grid(product_id = product_id_new, payment_id = payment_id_filter$payment_id)
+set.seed(124) # Change seed for diversity in randomness
+additional_assignments <- all_new_combinations %>%
+  sample_n(111)
+
+# Step 3: Combine the two parts into a single dataframe
+final_assignments <- rbind(initial_assignments, additional_assignments)
+
+
   # Assign product_id and payment_id to Product_payment_relationship_data
-  Product_payment_relationship_data$product_id <- selected_combinations$product_id
-  Product_payment_relationship_data$payment_id <- selected_combinations$payment_id
-} else {
-  # Printing Error if there are not enough combinations
-  print("Not enough unique combinations of product_id and payment_id to assign to each row in Product_payment_relationship_data.")
-}
+  Product_payment_relationship_data$product_id <- final_assignments$product_id
+  Product_payment_relationship_data$payment_id <- final_assignments$payment_id
 
 # Check for duplicates based on 'product_id' and 'payment_id'
 duplicates <- duplicated(Product_payment_relationship_data[c("product_id", "payment_id")])
@@ -236,50 +248,16 @@ print(paste("Number of duplicate rows:", num_duplicates))
 
 ```
 
-```{r import data}
 
 
-library(RSQLite)
 
-conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
 
-# Import seller_data into Seller table
-dbWriteTable(conn, "Seller", seller_data, append = TRUE, overwrite = FALSE)
 
-# Import customer_data into Customers table
-dbWriteTable(conn, "Customers", customer_data, append = TRUE, overwrite = FALSE)
 
-# Import category_data into Categories table
-dbWriteTable(conn, "Categories", category_data, append = TRUE, overwrite = FALSE)
 
-# Import product_data into Product table
-dbWriteTable(conn, "Product", product_data, append = TRUE, overwrite = FALSE)
 
-# Import payment_data into Payment table
-dbWriteTable(conn, "Payment", payment_data, append = TRUE, overwrite = FALSE)
-
-# Import customer_review_product_relationship into Customers_review_Products_relationship table
-dbWriteTable(conn, "Customers_review_Products_relationship", customer_review_product_relationship, append = TRUE, overwrite = FALSE)
-
-# Import Product_payment_relationship_data into Product_payment_relationship table
-dbWriteTable(conn, "Product_payment_relationship", Product_payment_relationship_data, append = TRUE, overwrite = FALSE)
-#  close the database connection 
-dbDisconnect(conn)
-
+```{r dataValidation}
+checkValidation(seller_data, customer_data, category_data, product_data,payment_data, customer_review_product_relationship,Product_payment_relationship_data)
 ```
 
-```{r check data in database}
-# Reconnect to the database 
-conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
-
-# Load the entire 'Seller' table into an R data frame
-seller_data_df <- dbReadTable(conn, "Seller")
-
-# View the data frame
-head(seller_data_df) # Display the first few rows
-
-# When done, don't forget to disconnect
-dbDisconnect(conn)
-
-```
 
