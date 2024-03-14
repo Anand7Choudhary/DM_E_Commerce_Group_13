@@ -8,12 +8,16 @@ library(stringr)
 validate_no_null <- function(data, attribute, log_file) {
   # Identify rows with NULL values in the specified attribute
   invalid_rows <- data[is.na(data[[attribute]]) | data[[attribute]] == "", ]
+  
   # Open a connection to the log file in append mode
   con <- file(log_file, open = "a")
+  data_filter<-data
+  
   if(nrow(invalid_rows) > 0) {
-    writeLines(sprintf("Rows with Null Value (%s):\n%s\n", attribute, toString(invalid_rows)),con)
-    # Remove rows with NULL values in the specified attribute from the data
-    data <- data[!is.na(data[[attribute]]), ]
+    writeLines(sprintf("Rows with Null Value (%s):\n%s\n", attribute, toString(invalid_rows)), con)
+    # Directly modify the data frame in-place to remove invalid rows
+    data_filtered <- data[!is.na(data[[attribute]]) & data[[attribute]] != "", ]  # Note the comma
+    data <- subset(data, !is.na(data[[attribute]]) & data[[attribute]] != "")
   }
   # Close the connection to the log file
   close(con)
@@ -21,12 +25,13 @@ validate_no_null <- function(data, attribute, log_file) {
 }
 
 
+
 #Function to check for Uniqueness in keys
 validate_no_duplicate <- function(data, attribute, log_file) {
   duplicated_rows <- data[duplicated(data[[attribute]]) | duplicated(data[[attribute]], fromLast = TRUE), ]
   con <- file(log_file, open = "a")
   if(nrow(duplicated_rows) > 0) {
-    writeLines(sprintf("Rows with duplicated primary key (%s):\n%s\n", attribute, toString(duplicated_rows)),con)
+    writeLines(sprintf("Rows with duplicated attribute (%s):\n%s\n", attribute, toString(duplicated_rows)),con)
     data <- data[!duplicated(data[[attribute]]) & !duplicated(data[[attribute]], fromLast = TRUE), ]
   }
   # Close the connection
@@ -92,10 +97,7 @@ validate_numeric_format1 <- function(data, numeric_attribute, log_file) {
   pattern <- "^[0-9]+(\\.[0-9]+)?$"
   invalid_rows <- data[!grepl(pattern, data[[numeric_attribute]]), ]
   if(nrow(invalid_rows) > 0) {
-    writeLines(sprintf("Rows with incorrectly formatted values in attribute %s:", numeric_attribute), con)
-    for (row in 1:nrow(invalid_rows)) {
-      writeLines(paste("Row", row, ":", toString(invalid_rows[row, ])), con)
-    }
+    writeLines(sprintf("Rows with incorrectly formatted values in attribute %s:\n%s\n", numeric_attribute, toString(invalid_rows)),con)
   }
   # Close the connection
   close(con)
@@ -111,10 +113,8 @@ validate_numeric_format2 <- function(data, numeric_attribute, log_file) {
   pattern <- "^[0-9]+$"
   invalid_rows <- data[!grepl(pattern, data[[numeric_attribute]]), ]
   if(nrow(invalid_rows) > 0) {
-    writeLines(sprintf("Rows with incorrectly formatted values in attribute %s:", numeric_attribute), con)
-    for (row in 1:nrow(invalid_rows)) {
-      writeLines(paste("Row", row, ":", toString(invalid_rows[row, ])), con)
-    }
+    writeLines(sprintf("Rows with incorrectly formatted values in attribute %s:\n%s\n", numeric_attribute, toString(invalid_rows)),con)
+    
   }
   # Close the connection
   close(con)
@@ -129,10 +129,8 @@ validate_positive_values <- function(data, numeric_attribute, log_file) {
   # Filter rows where the numeric attribute is not positive
   invalid_rows <- data[data[[numeric_attribute]] < 0, ]
   if(nrow(invalid_rows) > 0) {
-    writeLines(sprintf("Rows with non-positive values in attribute %s:", numeric_attribute), con)
-    for (row in 1:nrow(invalid_rows)) {
-      writeLines(paste("Row", row, ":", toString(invalid_rows[row, ])), con)
-    }
+    writeLines(sprintf("Rows with incorrectly formatted values in attribute %s:\n%s\n", numeric_attribute, toString(invalid_rows)),con)
+    
   }
   # Close the connection
   close(con)
@@ -153,13 +151,8 @@ validate_date_format_and_range <- function(data, date_attribute, log_file) {
   
   if(nrow(invalid_rows) > 0) {
     # Log details of the invalid rows to the file connection
-    message <- sprintf("Rows with invalid or future dates in attribute %s:", date_attribute)
-    writeLines(message, con)
-    # Serialize invalid rows details for logging
-    invalid_details <- apply(invalid_rows, 1, function(row) paste(colnames(data), "=", row, collapse = ", "))
-    writeLines(invalid_details, con)
-    # Remove invalid rows from data
-    data <- data[valid_dates & !future_dates, ]
+    writeLines(sprintf("Rows with invalid or future dates in attribute %s:\n%s\n", numeric_attribute, toString(invalid_rows)),con)
+    
   }
   # Close the file connection
   close(con)
@@ -167,8 +160,6 @@ validate_date_format_and_range <- function(data, date_attribute, log_file) {
 }
 
 #foreign key constraint
-library(readr)
-
 validate_fk_availability <- function(source_csv, fk_attribute, referenced_csv, referenced_pk, log_file) {
   # Load the CSV files
   source_data <- read_csv(source_csv)
@@ -225,54 +216,54 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
  #Seller validation
     #seller_id
-  seller_data<-validate_no_null(seller_data,"seller_id",seller_log_file)
-  seller_data<-validate_no_duplicate(seller_data,"seller_id",seller_log_file)
+  seller_data_new<<-validate_no_null(seller_data,"seller_id",seller_log_file)
+  seller_data_new<<-validate_no_duplicate(seller_data_new,"seller_id",seller_log_file)
     #seller_name
-  seller_data<-validate_no_null(seller_data,"seller_name",seller_log_file)
+  seller_data_new<<-validate_no_null(seller_data_new,"seller_name",seller_log_file)
     #seller_email
-  seller_data<-validate_no_duplicate(seller_data,"seller_email",seller_log_file)
-  seller_data<-validate_email_format(seller_data,"seller_email",seller_log_file)
+  seller_data_new<<-validate_no_duplicate(seller_data_new,"seller_email",seller_log_file)
+  seller_data_new<<-validate_email_format(seller_data_new,"seller_email",seller_log_file)
     #seller_phone_no
-  seller_data<-validate_phone_format(seller_data,"seller_phone_no",seller_log_file)
+  seller_data_new<<-validate_phone_format(seller_data_new,"seller_phone_no",seller_log_file)
   
 #Product validation
   #product_id
-  product_data<-validate_no_null(product_data,"product_id",product_log_file)
-  product_data<-validate_no_duplicate(product_data,"product_id",product_log_file)
+  product_data_new<<-validate_no_null(product_data,"product_id",product_log_file)
+  product_data_new<<-validate_no_duplicate(product_data_new,"product_id",product_log_file)
   #category_id
-  product_data<-validate_no_null(product_data,"category_id",product_log_file)
+  product_data_new<<-validate_no_null(product_data_new,"category_id",product_log_file)
   #seller_id
-  product_data<-validate_no_null(product_data,"seller_id",product_log_file)
+  product_data_new<<-validate_no_null(product_data_new,"seller_id",product_log_file)
   #product_name
-  product_data<-validate_no_null(product_data,"product_name",product_log_file)
+  product_data_new<<-validate_no_null(product_data_new,"product_name",product_log_file)
   #product_price
-  product_data<-validate_no_null(product_data,"product_price",product_log_file)
-  product_data<-validate_numeric_format1(product_data,"product_price",product_log_file)
-  product_data<-validate_positive_values(product_data,"product_price",product_log_file)
+  product_data_new<<-validate_no_null(product_data_new,"product_price",product_log_file)
+  product_data_new<<-validate_numeric_format1(product_data_new,"product_price",product_log_file)
+  product_data_new<<-validate_positive_values(product_data_new,"product_price",product_log_file)
   #quantity_available
-  product_data<-validate_no_null(product_data,"quantity_available",product_log_file)
-  product_data<-validate_numeric_format2(product_data,"quantity_available",product_log_file)
-  product_data<-validate_positive_values(product_data,"quantity_available",product_log_file)
+  product_data_new<<-validate_no_null(product_data_new,"quantity_available",product_log_file)
+  product_data_new<<-validate_numeric_format2(product_data_new,"quantity_available",product_log_file)
+  product_data_new<<-validate_positive_values(product_data_new,"quantity_available",product_log_file)
   
 #Customer Validation
   #customer_id
-  customer_data<-validate_no_null(customer_data,"customer_id",customer_log_file)
-  customer_data<-validate_no_duplicate(customer_data,"customer_id",customer_log_file)
+  customer_data_new<<-validate_no_null(customer_data,"customer_id",customer_log_file)
+  customer_data_new<-validate_no_duplicate(customer_data_new,"customer_id",customer_log_file)
   #cust_password
-  customer_data<-validate_no_null(customer_data,"cust_password",customer_log_file)
+  customer_data_new<<-validate_no_null(customer_data_new,"cust_password",customer_log_file)
   #email
-  customer_data<-validate_no_duplicate(customer_data,"email",customer_log_file)
-  customer_data<-validate_email_format(customer_data,"email",customer_log_file)
+  customer_data_new<<-validate_no_duplicate(customer_data_new,"email",customer_log_file)
+  customer_data_new<<-validate_email_format(customer_data_new,"email",customer_log_file)
   #first_name
-  customer_data<-validate_no_null(customer_data,"first_name",customer_log_file)
-  customer_data<-validate_words_and_space(customer_data,"first_name",customer_log_file)
+  customer_data_new<<-validate_no_null(customer_data_new,"first_name",customer_log_file)
+  customer_data_new<<-validate_words_and_space(customer_data_new,"first_name",customer_log_file)
   #last_name
-  customer_data<-validate_no_null(customer_data,"last_name",customer_log_file)
-  customer_data<-validate_words_and_space(customer_data,"last_name",customer_log_file)
+  customer_data_new<<-validate_no_null(customer_data_new,"last_name",customer_log_file)
+  customer_data_new<<-validate_words_and_space(customer_data_new,"last_name",customer_log_file)
   #date_of_birth
-  customer_data<-validate_date_format_and_range(customer_data,"date_of_birth",customer_log_file)
+  customer_data_new<<-validate_date_format_and_range(customer_data_new,"date_of_birth",customer_log_file)
   #phone_number
-  customer_data<-validate_phone_format(customer_data,"phone_number",customer_log_file)
+  customer_data_new<<-validate_phone_format(customer_data_new,"phone_number",customer_log_file)
   print("hey")
 }
 

@@ -1,8 +1,11 @@
 Rows with Null Value (seller_name):
-, bbilsford0@intel.com, 319-296-8229, United Kingdom, Merton, selr_7cbcrd
+c("", ""), c("bbilsford0@intel.com", "broelofsend@blogs.com"), c("319-296-8229", "248-273-7924"), c("United Kingdom", "United Kingdom"), c("Merton", "Bristol"), c("selr_7cbcrd", "selr_JfvT8X")
+
+Rows with duplicated attribute (seller_email):
+c("Murphy Group", "Langworth-Weimann"), c("ccollinson7@bloomberg.com", "ccollinson7@bloomberg.com"), c("467-628-0900", "535-948-5388"), c("United Kingdom", "United Kingdom"), c("Birmingham", "Burnside"), c("selr_JcKVfU", "selr_Fl4JiV")
 
 Rows with invalid email format in attribute seller_email:
-Corkery LLC, wca2@ny@times.com, 597-299-8102, United Kingdom, Glasgow, selr_HvIpHG
+c("Corkery LLC", "Homenick-Botsford"), c("wca2@ny@times.com", "ostannard6@furl.net."), c("597-299-8102", "186-884-5750()"), c("United Kingdom", "United Kingdom"), c("Glasgow", "Stapleford"), c("selr_HvIpHG", "selr_CGzoYe")
 
 Rows with invalid phone format (seller_phone_no):
 Wilkinson, Beier and Ebert, lschimke5@nih.gov, 999-874-4492/, United Kingdom, Ford, selr_SGIVBl

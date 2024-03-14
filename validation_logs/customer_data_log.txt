@@ -1,0 +1,21 @@
+Rows with Null Value (cust_password):
+Benson, Cowderay, Male, 01-06-00, , bcowderay0@rakuten.co.jp, 525-342-4794, 84, Mosinee, Sutton, United Kingdom, cust_0eKM49
+
+Rows with duplicated attribute (email):
+c("Flossie", "Selia"), c("Beddows", "Chappelow"), c("Female", "Female"), c("2/17/1961", "05-02-58"), c("nQ9\\V~sbJ", "bT5/D(z#)+b>y"), c("fbeddows3@yolasite.com", "fbeddows3@yolasite.com"), c("703-161-9211", "283-416-5910"), c(1592, 52), c("Clarendon", "Crowley"), c("London", "Marston"), c("United Kingdom", "United Kingdom"), c("cust_MwZe8G", "cust_knLeEG")
+
+Rows with invalid email format in attribute email:
+Gibby, Dany, Male, 05-03-04, zD3\5A},~P,DV>, , 203-540-5781, 0, Melody, Hatton, United Kingdom, cust_i6Kwof
+
+Rows with Null Value (first_name):
+, Mynett, Female, 10/18/1960, jM5!{/V?p&0x, jmynette@gov.uk, 611-151-4164, 90094, Hayes, Sheffield, United Kingdom, cust_XI7GLA
+
+Rows with non-word characters in attribute first_name:
+, Mynett, Female, 10/18/1960, jM5!{/V?p&0x, jmynette@gov.uk, 611-151-4164, 90094, Hayes, Sheffield, United Kingdom, cust_XI7GLA
+
+Rows with Null Value (last_name):
+Letisha, , Female, 04-05-72, uT1|zmI"`LvCQu, lgreensidesa@buzzfeed.com, 727-635-4722, 47194, Hoepker, Milton, United Kingdom, cust_QvpuIl
+
+Rows with non-word characters in attribute last_name:
+Letisha, , Female, 04-05-72, uT1|zmI"`LvCQu, lgreensidesa@buzzfeed.com, 727-635-4722, 47194, Hoepker, Milton, United Kingdom, cust_QvpuIl
+

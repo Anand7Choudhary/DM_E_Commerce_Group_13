@@ -1,0 +1,12 @@
+Rows with Null Value (category_id):
+prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Rows with Null Value (product_name):
+c("prod_KpJ1M6", "prod_H2Rvon"), c("catg_qRQNVB", "catg_EdbxVe"), c("selr_eEoiyG", "selr_Tdz6h0"), c("", ""), c("Graphic t-shirt with a unique design.", "Comfortable and stylish sofa for your living room."), c(24.99, 799.99), c(30, 5)
+
+Rows with incorrectly formatted values in attribute product_price:
+prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Rows with incorrectly formatted values in attribute quantity_available:
+prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+

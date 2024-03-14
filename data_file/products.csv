@@ -1,5 +1,5 @@
 ﻿product_id,category_id,seller_id,product_name,product_desc,product_price,quantity_available
-1,1,101,T-shirt,Soft cotton t-shirt in various sizes and colors.,19.99,50
+1,1,,T-shirt,Soft cotton t-shirt in various sizes and colors.,-19.99,50
 2,1,102,Coffee Maker,Programmable coffee maker with different brew strengths.,49.99,20
 3,2,201,Novel,A thrilling mystery novel by a renowned author.,14.99,30
 4,2,202,Cookbook,A collection of delicious and easy-to-follow recipes.,24.99,15
@@ -7,7 +7,7 @@
 6,3,302,Wireless Headphones,Noise-canceling headphones with excellent sound quality.,129.99,25
 7,4,401,Pen,Comfortable grip pen with smooth ink flow in various colors.,2.99,100
 8,4,402,Notebook,High-quality notebook with lined or blank pages.,5.99,75
-9,5,501,Guitar,Beginner-friendly acoustic guitar with a beautiful natural finish.,199.99,5
+,5,501,Guitar,Beginner-friendly acoustic guitar with a beautiful natural finish.,199.99,5
 10,5,502,Piano Keyboard,Portable digital piano keyboard with 88 weighted keys.,349.99,3
 11,1,103,Water Bottle,Reusable water bottle with leak-proof lid in various colors and sizes.,12.99,40
 12,1,104,Backpack,Spacious and durable backpack with comfortable straps.,49.99,25
@@ -16,12 +16,12 @@
 15,3,303,Smartphone,High-performance smartphone with advanced camera system.,999.99,7
 16,3,304,Tablet,Portable tablet with long battery life and powerful processor.,399.99,15
 17,4,403,Highlighter,Double-sided highlighter in various colors.,3.49,80
-18,4,404,Sticky Notes,Colorful and adhesive sticky notes for reminders and messages.,4.99,60
+18,,404,Sticky Notes,Colorful and adhesive sticky notes for reminders and messages.,4.99,60
 19,5,503,Violin,Elegant violin crafted from high-quality wood with a beautiful finish.,599.99,2
 20,5,504,Drum Set,Complete drum set with all necessary components for beginners.,399.99,4
 21,6,601,Jeans,Stylish and comfortable jeans in various sizes and washes.,49.99,60
-22,6,602,T-shirt,Graphic t-shirt with a unique design.,24.99,30
-23,7,701,Sofa,Comfortable and stylish sofa for your living room.,799.99,5
+22,6,602,,Graphic t-shirt with a unique design.,24.99,30
+23,7,701,,Comfortable and stylish sofa for your living room.,799.99,5
 24,7,702,Coffee Table,Modern coffee table with a sleek design.,199.99,10
 25,8,801,Shampoo,Nourishing shampoo for healthy and manageable hair.,14.99,50
 26,8,802,Body Lotion,Hydrating body lotion for smooth and soft skin.,9.99,75
@@ -86,10 +86,10 @@
 86,15,1502,Drawing Pencils,Set of high-quality drawing pencils in different grades for various artistic techniques.,12.99,30
 87,16,1602,Necklace,Statement necklace with a unique design and sparkling stones.,99.99,25
 88,17,1702,File Cabinet,Sturdy metal file cabinet with multiple drawers for organized storage.,179.99,5
-89,18,1802,Streamers,Party streamers in metallic colors for a festive touch.,5.99,80
+89,18,1802,Streamers,Party streamers in metallic colors for a festive touch.,5.99,0
 90,19,1902,Saw,Hand saw with a comfortable grip and sharp blade for various cutting tasks.,29.99,15
 91,20,2002,Paper Towels,Absorbent and durable paper towels for cleaning spills and messes.,5.99,100
-92,21,2102,Baby Wipes,Gentle and hypoallergenic baby wipes for cleaning and soothing.,8.99,50
+92,21,2102,Baby Wipes,Gentle and hypoallergenic baby wipes for cleaning and soothing.,8.99,50.3
 93,22,2202,Backpack (Travel),Spacious and comfortable travel backpack with multiple compartments.,89.99,20
 94,23,2302,Workbook,Companion workbook for practicing and reinforcing concepts from a specific textbook.,29.99,40
 95,24,2402,Sleeping Bag,Lightweight and compact sleeping bag for camping trips in warm weather.,49.99,10
