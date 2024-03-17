@@ -36,13 +36,7 @@ jobs:
     - name: Install R packages
       run: |
         Rscript -e 'install.packages(c("grid","gridExtra","DBI", "RSQLite", "ggplot2", "lubridate", "readr", "rmarkdown","dplyr","scales","RMySQL"), dependencies = TRUE)'
-
-    - name: Install R packages using a different CRAN mirror
-      run: |
-        options(repos = c(CRAN = "https://cloud.r-project.org/"))
-        Rscript -e 'install.packages("tidyverse", dependencies = TRUE)'
       
-        
     # Providing the link to file to execute
     - name: Run data mining assignment
       run: |
