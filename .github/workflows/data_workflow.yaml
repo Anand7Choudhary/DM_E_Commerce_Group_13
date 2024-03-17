@@ -41,14 +41,6 @@ jobs:
     - name: Run data mining assignment
       run: |
         Rscript -e "rmarkdown::render('DM_Assignment.Rmd')"
-        
-    - name: Update database with new data
-      run: |
-        Rscript Validation_Analysis/update_database.R
-        
-    - name: Run basic data analysis
-      run: |
-        Rscript Validation_Analysis/data_analysis.R
 
     # Commit changes
     - name: Add and commit changes

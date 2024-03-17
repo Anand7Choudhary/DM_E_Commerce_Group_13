@@ -256,7 +256,15 @@ get_new_rows <- function(df, db_table_name, primary_key, db_connection) {
   return(new_rows)
 }
 
-
+get_new_rows_for_composite_key <- function(df, db_table_name, primary_keys, db_connection) {
+  # Create a SQL query to select all combinations of primary keys
+  keys_select <- paste(primary_keys, collapse=", ")
+  query <- paste0("SELECT ", keys_select, " FROM ", db_table_name)
+  existing_keys_df <- dbGetQuery(db_connection, query)
+  # Find rows in the input dataframe that don't have a match in the existing keys
+  new_rows <- df %>%anti_join(existing_keys_df, by = primary_keys)
+  return(new_rows)
+}
 
 
 seller_log_file <- "validation_logs/seller_data_log.txt"
@@ -271,16 +279,18 @@ cust_rev_prod_log_file<- "validation_logs/cust_rev_prod_data_log.txt"
 
 checkValidation<- function(seller_data, customer_data, category_data, product_data, payment_data, customer_review_product_relationship, Product_payment_relationship_data){
   
-  con <- dbConnect(RSQLite::SQLite(), "path_to_your_database.db")
+  con <- dbConnect(RSQLite::SQLite(), "DM_assignment.db")
   
   #check for new data in the csv to perform the validation
-  new_seller_data<-get_new_rows(seller_data, "Seller", "seller_id", con)
-  #new_category_data<-
-  #new_product_data<-
-  #new_payment_data<-
-  #new_customer_review_product_relationship<-
-  #new_Product_payment_relationship_data<-
-  
+  new_seller_data<-get_new_rows(seller_data, "seller", "seller_id", con)
+  new_customer_data<-get_new_rows(customer_data, "customers", "customer_id", con)
+  new_category_data<-get_new_rows(category_data, "categories", "category_id", con)
+  new_product_data<-get_new_rows(product_data, "product", "product_id", con)
+  new_payment_data<-get_new_rows(payment_data, "payment", "payment_id", con)
+  primary_keys_for_review <- c("customer_id", "product_id")
+  new_customer_review_data <- get_new_rows_for_composite_key(customer_review_product_relationship, "Customers_review_Products_relationship", primary_keys_for_review, con)
+  primary_keys_for_payment <- c("product_id", "payment_id")
+  new_product_payment_data <- get_new_rows_for_composite_key(Product_payment_relationship_data, "Product_payment_relationship", primary_keys_for_payment, con)
   dbDisconnect(con)
   
   
@@ -305,7 +315,7 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
 #Product validation
   #product_id
-  product_data_new<<-validate_no_null(product_data,"product_id",product_log_file)
+  product_data_new<<-validate_no_null(new_product_data,"product_id",product_log_file)
   product_data_new<<-validate_no_duplicate(product_data_new,"product_id",product_log_file)
   #category_id
   product_data_new<<-validate_no_null(product_data_new,"category_id",product_log_file)
@@ -324,7 +334,7 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
 #Customer Validation
   #customer_id
-  customer_data_new<<-validate_no_null(customer_data,"customer_id",customer_log_file)
+  customer_data_new<<-validate_no_null(new_customer_data,"customer_id",customer_log_file)
   customer_data_new<<-validate_no_duplicate(customer_data_new,"customer_id",customer_log_file)
   #cust_password
   customer_data_new<<-validate_no_null(customer_data_new,"cust_password",customer_log_file)
@@ -344,14 +354,14 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
 #Categories
   #category_id
-  category_data_new<<-validate_no_null(category_data,"category_id",category_log_file)
+  category_data_new<<-validate_no_null(new_category_data,"category_id",category_log_file)
   category_data_new<<-validate_no_duplicate(category_data_new,"category_id",category_log_file)
   #category_name
   category_data_new<<-validate_no_null(category_data_new,"category_name",category_log_file)
   
 #Payment
   #payment_id
-  payment_data_new<<-validate_no_null(payment_data,"payment_id",payment_log_file)
+  payment_data_new<<-validate_no_null(new_payment_data,"payment_id",payment_log_file)
   payment_data_new<<-validate_no_duplicate(payment_data_new,"payment_id",payment_log_file)
   #customer_id
   payment_data_new<<-validate_no_null(payment_data_new,"customer_id",payment_log_file)
@@ -360,7 +370,7 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
   #Product_payment_relationship
   #product_id
-  Product_payment_relationship_data_new<<-validate_no_null(Product_payment_relationship_data,"product_id",prod_payment_log_file)
+  Product_payment_relationship_data_new<<-validate_no_null(new_product_payment_data,"product_id",prod_payment_log_file)
   #payment_id
   Product_payment_relationship_data_new<<-validate_no_null(Product_payment_relationship_data_new,"payment_id",prod_payment_log_file)
   #quantity
@@ -370,7 +380,7 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
   #Customers_review_Products_relationship
   #customer_id
-  customer_review_product_relationship_new<<-validate_no_null(customer_review_product_relationship,"customer_id",cust_rev_prod_log_file)
+  customer_review_product_relationship_new<<-validate_no_null(new_customer_review_data,"customer_id",cust_rev_prod_log_file)
   #product_id
   customer_review_product_relationship_new<<-validate_no_null(customer_review_product_relationship_new,"product_id",cust_rev_prod_log_file)
   #rating
@@ -392,8 +402,9 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
     Product_payment_relationship_data_new<<-validate_fk_availability(Product_payment_relationship_data_new,"product_id",product_data_new,"product_id",prod_payment_log_file)
     customer_review_product_relationship_new<<-validate_fk_availability(customer_review_product_relationship_new,"product_id",product_data_new,"product_id",cust_rev_prod_log_file)
   print("hey")
-  
-  checkValidation()
+  #seller_data_new,payment_data_new,new_product_data,new_customer_data,new_category_data,Product_payment_relationship_data_new,customer_review_product_relationship_new
+  print(seller_data_new)
+  databaseUpdation(seller_data_new,payment_data_new,product_data_new,customer_data_new,category_data_new,Product_payment_relationship_data_new,customer_review_product_relationship_new)
 }
 
 

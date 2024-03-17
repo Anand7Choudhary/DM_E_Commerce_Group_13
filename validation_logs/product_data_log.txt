@@ -151,3 +151,171 @@ product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, produ
 product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
 product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
 product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 15:52:07 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (seller_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 15:54:25 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (seller_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 15:58:51 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (category_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 16:12:00 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (category_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 16:18:25 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (category_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 16:19:16 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (category_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 16:20:43 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (category_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
