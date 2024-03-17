@@ -35,11 +35,7 @@ jobs:
     # Installing the necessary Packages  
     - name: Install R packages
       run: |
-<<<<<<< HEAD
         Rscript -e 'install.packages(c("grid","gridExtra","DBI", "RSQLite", "ggplot2", "lubridate", "readr", "rmarkdown","dplyr","scales","RMySQL"), dependencies = TRUE)'
-=======
-        Rscript -e 'install.packages(c("tidyverse","grid","gridExtra","DBI", "RSQLite", "ggplot2", "lubridate", "readr", "rmarkdown","dplyr","scales","RMySQL"), dependencies = TRUE)'
->>>>>>> 700d7ab783cd0d0e1dc595d291a9554608f6312a
 
     - name: Install R packages using a different CRAN mirror
       run: |
