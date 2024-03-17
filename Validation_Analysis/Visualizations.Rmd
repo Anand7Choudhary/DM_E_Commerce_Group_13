@@ -1,0 +1,278 @@
+---
+title: "Visualizations"
+output: html_document
+date: "2024-03-17"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(RSQLite)
+library(dplyr)
+library(tidyverse)
+library(scales)
+```
+
+# Analysis on the database
+
+First, we connect to the SQL database
+```{r viz}
+
+# Reconnect to the database 
+conn <- RSQLite::dbConnect(RSQLite::SQLite(), dbname = "DM_assignment_Final_version.db")
+
+```
+
+# Create Views 
+```{sql connection=conn}
+
+-- Drop Views before creating 
+DROP VIEW IF EXISTS payments_sellers;
+
+```
+
+
+```{sql connection=conn}
+
+-- Drop Views before creating 
+DROP VIEW IF EXISTS review_w_category;
+
+```
+
+```{sql connection=conn}
+
+-- Drop Views before creating 
+DROP VIEW IF EXISTS payments_calculations;
+
+```
+
+```{sql connection=conn}
+
+-- Drop Views before creating 
+DROP VIEW IF EXISTS product_w_categ_seller;
+
+```
+
+
+```{sql connection=conn}
+
+-- Create Views  
+CREATE VIEW IF NOT EXISTS payments_sellers AS 
+SELECT ppr.product_id, ppr.payment_id, ppr.quantity, product.product_price, seller.seller_id, payment.date_time
+FROM product_payment_relationship AS ppr
+LEFT JOIN product 
+ON product.product_id = ppr.product_id
+LEFT JOIN seller
+ON seller.seller_id = product.seller_id
+LEFT JOIN payment
+ON payment.payment_id = ppr.payment_id;
+
+
+```
+
+
+```{sql connection=conn}
+
+CREATE VIEW IF NOT EXISTS review_w_category AS 
+SELECT crp.product_id, crp.date_time, crp.rating, product_w_categ_seller.category_name
+FROM customers_review_products_relationship AS crp
+LEFT JOIN product_w_categ_seller
+ON product_w_categ_seller.product_id = crp.product_id;
+
+
+```
+
+
+```{sql connection=conn}
+
+CREATE VIEW IF NOT EXISTS payments_calculations AS 
+SELECT ppr.payment_id, ppr.product_id, ppr.quantity AS ordered_quantity, product_w_categ_seller.product_price AS prod_price, product_w_categ_seller.product_price * ppr.quantity AS ordered_total, product_w_categ_seller.category_name AS prod_category
+FROM product_payment_relationship AS ppr
+LEFT JOIN product_w_categ_seller 
+ON product_w_categ_seller.product_id = ppr.product_id;
+
+
+```
+
+```{sql connection=conn}
+
+CREATE VIEW IF NOT EXISTS product_w_categ_seller AS 
+SELECT product.product_id, product_name, product_price, quantity_available, category_name, seller.seller_id
+FROM product
+LEFT JOIN categories
+ON product.category_id = categories.category_id
+LEFT JOIN seller
+ON seller.seller_id = product.seller_id;
+
+
+```
+
+
+```{r}
+
+# Import Views to R Dataframes 
+df_review_w_category <- RSQLite::dbGetQuery(conn,"SELECT * 
+                                           FROM review_w_category")
+
+df_payments_calculations <- RSQLite::dbGetQuery(conn,"SELECT * 
+                                           FROM payments_calculations")
+
+df_payments_sellers <- RSQLite::dbGetQuery(conn,"SELECT * 
+                                           FROM payments_sellers")
+
+df_seller_data <- RSQLite::dbGetQuery(conn,"SELECT seller_id, seller_name, seller_city, seller_country 
+                                           FROM seller")
+
+
+
+```
+
+
+```{r}
+
+# Change datetime attribute to date type 
+df_payments_sellers$date_time <- as.Date(df_payments_sellers$date_time, format = "%m/%d/%Y")
+df_review_w_category$date_time <- as.Date(df_review_w_category$date_time, format = "%m/%d/%Y")
+
+```
+
+
+```{r}
+# Avg. Review by Category Plot
+review_summ <- df_review_w_category %>%
+  group_by(category_name)%>% 
+  summarize(avg_score = round(mean(rating),1))
+
+review_summ <- as.data.frame(review_summ) 
+review_summ <- arrange(review_summ, desc(avg_score))
+head(review_summ)
+
+rating_by_cat <- ggplot(review_summ, aes(x=reorder(category_name, avg_score, decreasing=TRUE), y=avg_score)) + 
+  geom_jitter() + 
+  scale_x_discrete(guide = guide_axis(angle = 90)) + 
+  labs(x='Category', y='Average Score', title='Average Rating Score by Category', subtitle = 'Across all years')
+rating_by_cat
+
+```
+
+```{r}
+
+# Sales by Category Plot 
+payment_summ <- df_payments_calculations %>%
+  group_by(prod_category)%>% 
+  summarize(total_ordered = round(sum(ordered_total),2))
+
+payment_summ <- as.data.frame(payment_summ) 
+head(payment_summ)
+
+top_categories <- ggplot(payment_summ, aes(x=reorder(prod_category, total_ordered, decreasing=TRUE), y=total_ordered)) + 
+  geom_col() + 
+  scale_x_discrete(guide = guide_axis(angle = 90)) + 
+  labs(x='Category', y='Total Sales [GBP]', title='Sales by Category', subtitle = 'Across all years') + 
+  scale_y_continuous(labels = label_comma())
+top_categories
+
+```
+
+```{r}
+
+# Top sellers Plot
+df_payments_sellers <- df_payments_sellers %>%
+  mutate(order_total=quantity*product_price)
+
+sales_top_sellers <- df_payments_sellers %>%
+  group_by(seller_id) %>%
+  summarise(total_sales = round(sum(order_total),2), avg_sales = round(mean(order_total),2)) %>%
+  arrange(desc(total_sales)) %>%
+  top_n(20)
+
+sales_top_sellers <- sales_top_sellers %>% 
+  left_join(df_seller_data, by= join_by(seller_id)) 
+sales_top_sellers
+
+plot_top_sellers <- ggplot(sales_top_sellers, aes(x=reorder(seller_name, total_sales, decreasing=FALSE), y=total_sales)) + 
+  geom_col() + 
+  labs(x='Seller Name', y='Total Sales [GBP]', title='Top 20 Sellers', subtitle = 'Across all years') + 
+  scale_y_continuous(labels = label_comma()) + 
+  coord_flip()
+plot_top_sellers
+
+
+
+```
+
+```{r}
+#Top 10 sales products
+
+prod_cat <- DBI::dbGetQuery(conn, "SELECT a.product_id,a.product_name, a.category_id, a.product_price, a.quantity_available, b.category_name, c.quantity
+FROM product a
+LEFT JOIN categories b ON a.category_id = b.category_id
+LEFT JOIN product_payment_relationship c ON a.product_id = c.product_id")
+
+#Calculate Sales
+revenue <- prod_cat %>%
+  group_by(category_id, product_id, product_name, category_name) %>%
+  summarize(total_revenue = sum(product_price * quantity, na.rm = TRUE)) %>%
+  ungroup() %>%
+  select(product_id, product_name, category_id, category_name, total_revenue) 
+
+#Select top 10 sales product
+rev_prod <- revenue %>%
+  slice_max(order_by = total_revenue, n = 10) %>%
+  arrange(desc(total_revenue))
+
+#Plot
+rev_prod_plt <- ggplot(rev_prod, aes(y = reorder(paste(product_name, product_id), total_revenue), x = total_revenue, fill = as.factor(category_name))) +
+  geom_bar(stat = "identity") + labs(x="Sales", y="Product", title = "Top 10 Product Sales", fill = "Category")
+
+rev_prod_plt
+
+```
+
+```{r}
+#Top 10 Sales with rating
+
+prod <- DBI::dbGetQuery(conn, "SELECT * FROM product")
+review <- DBI::dbGetQuery(conn, "SELECT a.product_id, a.rating, a.date_time, b.product_name 
+FROM customers_review_products_relationship a 
+LEFT JOIN product b ON a.product_id = b.product_id")
+
+#Calculate average rating
+avg_review <- review %>%
+  group_by(product_id) %>%
+  summarise(avg_rev = round(mean(rating),2))
+
+#join sales with rating for each product
+review_revenue <- left_join(rev_prod, avg_review, by = "product_id")
+
+#Plot
+revenue_review_plt <- ggplot(review_revenue, aes(y = reorder(paste(product_name,product_id),total_revenue), x = total_revenue, size = avg_rev)) +
+  geom_point() +  
+  scale_size_continuous(range = c(2, 10)) + labs(title= "Top 10 Sales with Rating",x="Sales", y="Product", , size = "Average Rating")
+
+revenue_review_plt
+
+```
+
+
+```{r}
+#Payment Type-Orders
+
+payment_q <- DBI::dbGetQuery(conn, "SELECT a.payment_id, a.payment_type, a.payment_status, b.quantity
+FROM payment a
+LEFT JOIN product_payment_relationship b ON a.payment_id = b.payment_id")
+
+#Calculate number of orders
+order_payment <- payment_q %>%
+  group_by(payment_type) %>%
+  filter(quantity != 'NA') %>%
+  summarize(number_order = n_distinct(payment_id))
+
+#Plot  
+paytype_plt <- ggplot(order_payment, aes(x = payment_type, y = number_order)) +
+  geom_bar(stat = "identity") + labs(x="Payment Type", y="Total Order",title= "Payment Type - Number of Orders")
+
+paytype_plt
+
+```
+

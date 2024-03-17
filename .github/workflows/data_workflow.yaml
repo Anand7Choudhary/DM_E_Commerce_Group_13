@@ -35,12 +35,15 @@ jobs:
     # Installing the necessary Packages  
     - name: Install R packages
       run: |
-        Rscript -e 'install.packages(c("DBI", "RSQLite", "ggplot2", "lubridate", "readr", "rmarkdown","dplyr"), dependencies = TRUE)'
+        Rscript -e 'install.packages(c("grid","gridExtra","DBI", "RSQLite", "ggplot2", "lubridate", "readr", "rmarkdown","dplyr","tidyverse","scales","RMySQL"), dependencies = TRUE)'
 
     # Providing the link to file to execute
     - name: Run data mining assignment
       run: |
         Rscript -e "rmarkdown::render('DM_Assignment.Rmd')"
+    - name: Run basic data analysis
+      run: |
+        Rscript -e "rmarkdown::render('Validation_Analysis/Visualizations.Rmd')"
 
     # Commit changes
     - name: Add and commit changes
