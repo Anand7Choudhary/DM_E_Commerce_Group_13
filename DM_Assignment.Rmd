@@ -39,7 +39,7 @@ dbExecute(conn, 'CREATE TABLE if not exists Product (
           )')
 
 # Create Customers table
-dbExecute(conn, 'CREATE TABLE if not exists Customers (customer_id VARCHAR(255)  PRIMARY KEY, cust_password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE, first_name VARCHAR(100) NOT NULL, last_name VARCHAR(100) NOT NULL, date_of_birth DATE, gender CHAR(1), street VARCHAR(255), house_number VARCHAR(50), city VARCHAR(100), country VARCHAR(100), phone_number VARCHAR(20))')
+dbExecute(conn, 'CREATE TABLE if not exists Customers (customer_id VARCHAR(255)  PRIMARY KEY, cust_password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE, first_name VARCHAR(100) NOT NULL, last_name VARCHAR(100) NOT NULL, date_of_birth DATE, gender VARCHAR(20), street VARCHAR(255), house_number VARCHAR(50), city VARCHAR(100), country VARCHAR(100), phone_number VARCHAR(20))')
 
 # Create Categories table
 dbExecute(conn, 'CREATE TABLE if not exists Categories (category_id VARCHAR(255)  PRIMARY KEY, category_name VARCHAR(255) NOT NULL, category_desc TEXT)')
@@ -120,11 +120,11 @@ generate_unique_ids_with_prefix <- function(n, word,lenOfId) {
 # Set a seed for reproducibility
 set.seed(1234)  
 # Assuming n_sellers, n_customers, n_categories, n_products are predefined
-n_sellers <- 300
-n_customers <- 300
-n_categories <- 25
-n_products <- 94
-n_payments <- 1000
+n_sellers <- nrow(read.csv("data_file/seller.csv"))
+n_customers <- nrow(read.csv("data_file/customer.csv"))
+n_categories <- nrow(read.csv("data_file/categories.csv"))
+n_products <- nrow(read.csv("data_file/products.csv"))
+n_payments <- nrow(read.csv("data_file/payment.csv"))
 
 
 

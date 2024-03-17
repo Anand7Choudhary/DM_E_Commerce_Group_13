@@ -1,0 +1,1019 @@
+Rows with unavailable foreign keys in attribute 'product_id':
+
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Rows with unavailable foreign keys in attribute 'product_id':
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Rows with unavailable foreign keys in attribute 'product_id':
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Error: Rows with unavailable foreign keys in attribute 'product_id':
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Error: Rows with unavailable foreign keys in attribute 'product_id':
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Error: Rows with unavailable foreign keys in attribute 'product_id':
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Error: Rows with unavailable foreign keys in attribute (product_id):
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Error: Rows with unavailable foreign keys in attribute (product_id):
+comment: Great value, rating: 2, date_time: 8/7/2023, product_id: prod_H2Rvon, customer_id: cust_A826MH
+comment: Awful, rating: 3, date_time: 7/9/2023, product_id: prod_wNXbZr, customer_id: cust_0eKM49
+comment: Great value, rating: 2, date_time: 10/8/2023, product_id: prod_3PWSYn, customer_id: cust_YcvgsX
+comment: Highly recommend, rating: 5, date_time: 6/16/2022, product_id: prod_94Qttk, customer_id: cust_0tKdI4
+comment: Highly recommend, rating: 5, date_time: 5/5/2021, product_id: prod_94Qttk, customer_id: cust_LiUQTe
+comment: Great quality, rating: 3, date_time: 6/23/2022, product_id: prod_wNXbZr, customer_id: cust_93F8WI
+comment: Waste of Money, rating: 1, date_time: 11/18/2022, product_id: prod_c2Xd50, customer_id: cust_mVezCO
+comment: Waste of Money, rating: 4, date_time: 4/29/2021, product_id: prod_phr7F9, customer_id: cust_EdkHZ1
+comment: Waste of Money, rating: 2, date_time: 5/23/2021, product_id: prod_94Qttk, customer_id: cust_TOXCgH
+comment: Worth the buy, rating: 1, date_time: 12/24/2021, product_id: prod_b3wQpJ, customer_id: cust_ernoK2
+comment: Versatile, rating: 1, date_time: 2/14/2024, product_id: prod_c2Xd50, customer_id: cust_ROwWJi
+comment: Love it!, rating: 4, date_time: 8/6/2022, product_id: prod_SdSwsm, customer_id: cust_krIOZ6
+comment: Great value, rating: 3, date_time: 9/27/2022, product_id: prod_3PWSYn, customer_id: cust_0mfdPk
+comment: Love it!, rating: 3, date_time: 10/10/2021, product_id: prod_wNXbZr, customer_id: cust_WgxWeV
+comment: Love it!, rating: 4, date_time: 3/14/2022, product_id: prod_SdSwsm, customer_id: cust_WUMHoj
+comment: Great value, rating: 3, date_time: 6/23/2021, product_id: prod_c2Xd50, customer_id: cust_kDvP4l
+comment: Love it!, rating: 2, date_time: 2/9/2024, product_id: prod_b3wQpJ, customer_id: cust_t9QMcp
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_c2Xd50, customer_id: cust_GzcCBz
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_H2Rvon, customer_id: cust_FHUDgP
+comment: Great quality, rating: 4, date_time: 10/13/2023, product_id: prod_b3wQpJ, customer_id: cust_0mfdPk
+comment: Great value, rating: 1, date_time: 11/5/2023, product_id: prod_H2Rvon, customer_id: cust_w27uKI
+comment: Poor customer service, rating: 3, date_time: 8/6/2022, product_id: prod_wNXbZr, customer_id: cust_VwZrkh
+comment: Worth the buy, rating: 4, date_time: 12/23/2023, product_id: prod_phr7F9, customer_id: cust_bZhuQP
+comment: Worth the buy, rating: 2, date_time: 1/25/2023, product_id: prod_c2Xd50, customer_id: cust_eY3GRT
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_SdSwsm, customer_id: cust_JeiEf3
+comment: Great quality, rating: 5, date_time: 11/14/2021, product_id: prod_wNXbZr, customer_id: cust_vAfoiH
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_SdSwsm, customer_id: cust_n5K07B
+comment: Great value, rating: 4, date_time: 3/1/2021, product_id: prod_b3wQpJ, customer_id: cust_ufpL91
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_b3wQpJ, customer_id: cust_uRlrPZ
+comment: Love it!, rating: 4, date_time: 1/17/2022, product_id: prod_H2Rvon, customer_id: cust_O1KtX6
+comment: Poor quality, rating: 1, date_time: 7/21/2021, product_id: prod_3PWSYn, customer_id: cust_PbdESc
+comment: Great quality, rating: 3, date_time: 6/15/2022, product_id: prod_b3wQpJ, customer_id: cust_tRQ2ie
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_phr7F9, customer_id: cust_m1MDUS
+comment: Versatile, rating: 5, date_time: 5/30/2023, product_id: prod_KpJ1M6, customer_id: cust_ooltYG
+comment: Poor customer service, rating: 5, date_time: 6/9/2023, product_id: prod_H2Rvon, customer_id: cust_Bt3tvQ
+comment: Worth the buy, rating: 1, date_time: 2/9/2023, product_id: prod_wNXbZr, customer_id: cust_y3RsDn
+comment: Awful, rating: 5, date_time: 2/22/2024, product_id: prod_94Qttk, customer_id: cust_pxvSTo
+comment: Love it!, rating: 4, date_time: 9/19/2023, product_id: prod_H2Rvon, customer_id: cust_vDR299
+comment: Poor quality, rating: 2, date_time: 7/22/2022, product_id: prod_SdSwsm, customer_id: cust_FzYFO0
+comment: Versatile, rating: 2, date_time: 4/7/2023, product_id: prod_KpJ1M6, customer_id: cust_0ROM7b
+comment: Love it!, rating: 1, date_time: 5/18/2021, product_id: prod_c2Xd50, customer_id: cust_BQpgEd
+comment: Great value, rating: 3, date_time: 4/27/2022, product_id: prod_SdSwsm, customer_id: cust_1wpBPN
+comment: Awful, rating: 2, date_time: 5/6/2021, product_id: prod_phr7F9, customer_id: cust_ewlRBU
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_c2Xd50, customer_id: cust_ItNVkh
+comment: Great value, rating: 5, date_time: 9/15/2022, product_id: prod_KpJ1M6, customer_id: cust_rQf47T
+comment: Great value, rating: 5, date_time: 4/14/2022, product_id: prod_b3wQpJ, customer_id: cust_CJA3tk
+comment: Waste of Money, rating: 4, date_time: 11/29/2022, product_id: prod_SdSwsm, customer_id: cust_yofbJN
+comment: Versatile, rating: 4, date_time: 2/28/2022, product_id: prod_SdSwsm, customer_id: cust_rGxzyw
+comment: Great value, rating: 1, date_time: 8/1/2022, product_id: prod_KpJ1M6, customer_id: cust_FHUDgP
+comment: Awful, rating: 2, date_time: 2/7/2023, product_id: prod_KpJ1M6, customer_id: cust_WNIvmy
+comment: Waste of Money, rating: 4, date_time: 8/16/2021, product_id: prod_b3wQpJ, customer_id: cust_qsCUAY
+comment: Poor quality, rating: 3, date_time: 5/3/2023, product_id: prod_c2Xd50, customer_id: cust_ezUNmD
+comment: Versatile, rating: 4, date_time: 5/31/2022, product_id: prod_H2Rvon, customer_id: cust_Sjky8S
+comment: Waste of Money, rating: 5, date_time: 7/13/2022, product_id: prod_H2Rvon, customer_id: cust_EMLYLa
+comment: Poor quality, rating: 1, date_time: 9/22/2021, product_id: prod_SdSwsm, customer_id: cust_3CINnw
+comment: Poor quality, rating: 3, date_time: 8/19/2023, product_id: prod_KpJ1M6, customer_id: cust_hVgjmn
+comment: Awful, rating: 5, date_time: 3/9/2023, product_id: prod_phr7F9, customer_id: cust_ZPW5wO
+comment: Love it!, rating: 4, date_time: 7/25/2022, product_id: prod_SdSwsm, customer_id: cust_EMLYLa
+comment: Highly recommend, rating: 1, date_time: 5/21/2021, product_id: prod_KpJ1M6, customer_id: cust_uc24P2
+comment: Awful, rating: 5, date_time: 1/22/2023, product_id: prod_b3wQpJ, customer_id: cust_3rlhvJ
+comment: Love it!, rating: 1, date_time: 10/30/2023, product_id: prod_c2Xd50, customer_id: cust_6aqY4E
+comment: Worth the buy, rating: 2, date_time: 8/13/2023, product_id: prod_b3wQpJ, customer_id: cust_QbqsJl
+comment: Great quality, rating: 1, date_time: 8/23/2022, product_id: prod_H2Rvon, customer_id: cust_5wevcH
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_phr7F9, customer_id: cust_2zlCB4
+comment: Worth the buy, rating: 2, date_time: 1/13/2022, product_id: prod_SdSwsm, customer_id: cust_SbWSPk
+comment: Worth the buy, rating: 1, date_time: 7/24/2021, product_id: prod_wNXbZr, customer_id: cust_3psuql
+comment: Poor quality, rating: 5, date_time: 1/17/2023, product_id: prod_3PWSYn, customer_id: cust_EMLYLa
+comment: Great value, rating: 5, date_time: 12/2/2022, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Poor quality, rating: 1, date_time: 5/28/2021, product_id: prod_3PWSYn, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_c2Xd50, customer_id: cust_0tKdI4
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_c2Xd50, customer_id: cust_YcvgsX
+comment: Versatile, rating: 4, date_time: 4/17/2023, product_id: prod_KpJ1M6, customer_id: cust_qgo90h
+comment: Highly recommend, rating: 5, date_time: 5/30/2023, product_id: prod_wNXbZr, customer_id: cust_FjfItr
+comment: Versatile, rating: 3, date_time: 10/5/2022, product_id: prod_wNXbZr, customer_id: cust_jmQFab
+comment: Highly recommend, rating: 5, date_time: 5/6/2023, product_id: prod_H2Rvon, customer_id: cust_KP2ACj
+comment: Poor quality, rating: 5, date_time: 1/22/2024, product_id: prod_3PWSYn, customer_id: cust_ZPW5wO
+comment: Poor customer service, rating: 4, date_time: 5/1/2022, product_id: prod_94Qttk, customer_id: cust_3bMgyB
+comment: Poor quality, rating: 4, date_time: 2/10/2024, product_id: prod_KpJ1M6, customer_id: cust_jmQFab
+comment: Poor quality, rating: 3, date_time: 7/16/2022, product_id: prod_wNXbZr, customer_id: cust_yOKrCl
+comment: Poor customer service, rating: 1, date_time: 6/24/2023, product_id: prod_c2Xd50, customer_id: cust_ufpL91
+comment: Love it!, rating: 4, date_time: 10/11/2021, product_id: prod_c2Xd50, customer_id: cust_onRRwp
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_SdSwsm, customer_id: cust_T6VNbc
+comment: Highly recommend, rating: 2, date_time: 1/16/2022, product_id: prod_94Qttk, customer_id: cust_2VGuin
+comment: Poor quality, rating: 4, date_time: 6/8/2022, product_id: prod_wNXbZr, customer_id: cust_eY3GRT
+comment: Highly recommend, rating: 4, date_time: 1/6/2024, product_id: prod_wNXbZr, customer_id: cust_9KrwKS
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_ywALFj
+comment: Great value, rating: 1, date_time: 10/10/2023, product_id: prod_c2Xd50, customer_id: cust_TaJSep
+comment: Versatile, rating: 5, date_time: 7/6/2023, product_id: prod_H2Rvon, customer_id: cust_XOl9bu
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KpJ1M6, customer_id: cust_ToCjS6
+comment: Great value, rating: 4, date_time: 9/17/2023, product_id: prod_H2Rvon, customer_id: cust_TBuNK5
+comment: Waste of Money, rating: 5, date_time: 5/31/2022, product_id: prod_KpJ1M6, customer_id: cust_VIJF0I
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_H2Rvon, customer_id: cust_TOXCgH
+comment: Awful, rating: 1, date_time: 7/7/2022, product_id: prod_SdSwsm, customer_id: cust_Eme2ig
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_KpJ1M6, customer_id: cust_LHe3a5
+comment: Highly recommend, rating: 4, date_time: 5/5/2022, product_id: prod_phr7F9, customer_id: cust_WTztC7
+comment: Versatile, rating: 1, date_time: 1/24/2022, product_id: prod_SdSwsm, customer_id: cust_RFUHXR
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_wNXbZr, customer_id: cust_WMm8cc
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_H2Rvon, customer_id: cust_GzcCBz
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_3PWSYn, customer_id: cust_NEyv2e
+comment: Love it!, rating: 3, date_time: 6/2/2021, product_id: prod_wNXbZr, customer_id: cust_OqARUQ
+comment: Great quality, rating: 5, date_time: 2/27/2024, product_id: prod_94Qttk, customer_id: cust_R0XIS9
+comment: Waste of Money, rating: 1, date_time: 9/13/2023, product_id: prod_94Qttk, customer_id: cust_mLLV8m
+comment: Great value, rating: 1, date_time: 6/27/2021, product_id: prod_KpJ1M6, customer_id: cust_w27uKI
+comment: Poor quality, rating: 1, date_time: 5/24/2022, product_id: prod_H2Rvon, customer_id: cust_IXBjpM
+comment: Awful, rating: 2, date_time: 8/24/2022, product_id: prod_b3wQpJ, customer_id: cust_9JmlgO
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_H2Rvon, customer_id: cust_tFGAVC
+comment: Love it!, rating: 5, date_time: 8/21/2022, product_id: prod_94Qttk, customer_id: cust_rQf47T
+comment: Love it!, rating: 3, date_time: 12/31/2023, product_id: prod_SdSwsm, customer_id: cust_Lc6DcN
+
+Error: Rows with unavailable foreign keys in attribute (product_id):
+comment: Highly recommend, rating: 5, date_time: 10/13/2022, product_id: prod_sFPRpQ, customer_id: cust_BQpgEd
+comment: Great quality, rating: 1, date_time: 5/11/2022, product_id: prod_fkpCI6, customer_id: cust_NcTi1V
+comment: Great value, rating: 1, date_time: 2/28/2024, product_id: prod_sFPRpQ, customer_id: cust_fL6MIv
+comment: Poor customer service, rating: 1, date_time: 3/4/2023, product_id: prod_kgF4PH, customer_id: cust_WNIvmy
+comment: Poor customer service, rating: 3, date_time: 6/30/2021, product_id: prod_ps0NH2, customer_id: cust_3kBnph
+comment: Poor customer service, rating: 1, date_time: 1/4/2024, product_id: prod_b3wQpJ, customer_id: cust_7xDNA2
+comment: Awful, rating: 2, date_time: 9/5/2022, product_id: prod_Qt89pW, customer_id: cust_uc24P2
+comment: Poor customer service, rating: 4, date_time: 7/13/2022, product_id: prod_ZBQjP1, customer_id: cust_WMm8cc
+comment: Highly recommend, rating: 4, date_time: 3/7/2021, product_id: prod_fkpCI6, customer_id: cust_WMm8cc
+comment: Highly recommend, rating: 4, date_time: 7/25/2021, product_id: prod_ps0NH2, customer_id: cust_nmD1Z0
+comment: Great value, rating: 1, date_time: 7/24/2022, product_id: prod_te6wmN, customer_id: cust_3CINnw
+comment: Poor quality, rating: 5, date_time: 11/11/2023, product_id: prod_kgF4PH, customer_id: cust_eY3GRT
+comment: Great value, rating: 3, date_time: 9/19/2023, product_id: prod_5AvyHr, customer_id: cust_DBwv2g
+comment: Poor customer service, rating: 1, date_time: 8/11/2022, product_id: prod_kgF4PH, customer_id: cust_uc24P2
+comment: Great quality, rating: 3, date_time: 12/31/2021, product_id: prod_5AvyHr, customer_id: cust_EdkHZ1
+comment: Great quality, rating: 1, date_time: 7/19/2022, product_id: prod_8oejfT, customer_id: cust_TMor0i
+comment: Highly recommend, rating: 1, date_time: 3/25/2022, product_id: prod_te6wmN, customer_id: cust_xJqDFJ
+comment: Poor quality, rating: 5, date_time: 12/24/2023, product_id: prod_ZBQjP1, customer_id: cust_3CINnw
+comment: Love it!, rating: 4, date_time: 10/23/2023, product_id: prod_te6wmN, customer_id: cust_jAh6vw
+comment: Worth the buy, rating: 4, date_time: 9/12/2021, product_id: prod_ps0NH2, customer_id: cust_qsCUAY
+comment: Awful, rating: 1, date_time: 12/13/2021, product_id: prod_ZBQjP1, customer_id: cust_e3kKkg
+comment: Versatile, rating: 1, date_time: 9/20/2022, product_id: prod_ps0NH2, customer_id: cust_RwWofb
+comment: Love it!, rating: 5, date_time: 6/6/2021, product_id: prod_b3wQpJ, customer_id: cust_q1uMGJ
+comment: Great value, rating: 4, date_time: 10/27/2023, product_id: prod_kgF4PH, customer_id: cust_fL6MIv
+comment: Awful, rating: 4, date_time: 1/11/2024, product_id: prod_8oejfT, customer_id: cust_OHnVPF
+comment: Poor quality, rating: 5, date_time: 9/7/2022, product_id: prod_kgF4PH, customer_id: cust_WgxWeV
+comment: Poor quality, rating: 4, date_time: 2/15/2022, product_id: prod_5AvyHr, customer_id: cust_GbiYef
+comment: Waste of Money, rating: 4, date_time: 11/9/2023, product_id: prod_Qt89pW, customer_id: cust_bPioau
+comment: Worth the buy, rating: 2, date_time: 7/18/2023, product_id: prod_sFPRpQ, customer_id: cust_swmQa1
+comment: Poor quality, rating: 3, date_time: 10/5/2022, product_id: prod_8oejfT, customer_id: cust_3psuql
+comment: Awful, rating: 1, date_time: 2/11/2021, product_id: prod_b3wQpJ, customer_id: cust_ezUNmD
+comment: Versatile, rating: 3, date_time: 4/4/2021, product_id: prod_kgF4PH, customer_id: cust_3JAvK9
+comment: Waste of Money, rating: 1, date_time: 7/21/2021, product_id: prod_b3wQpJ, customer_id: cust_ALrV1p
+comment: Worth the buy, rating: 5, date_time: 4/1/2023, product_id: prod_8oejfT, customer_id: cust_FjfItr
+comment: Worth the buy, rating: 1, date_time: 11/23/2022, product_id: prod_KiBttm, customer_id: cust_FjfItr
+comment: Waste of Money, rating: 1, date_time: 2/19/2023, product_id: prod_5AvyHr, customer_id: cust_SbWSPk
+comment: Poor customer service, rating: 1, date_time: 11/10/2023, product_id: prod_ZBQjP1, customer_id: cust_HdlAft
+comment: Versatile, rating: 4, date_time: 6/3/2022, product_id: prod_fkpCI6, customer_id: cust_B3Ed3B
+comment: Awful, rating: 5, date_time: 4/17/2023, product_id: prod_b3wQpJ, customer_id: cust_2VGuin
+comment: Great quality, rating: 1, date_time: 10/11/2023, product_id: prod_te6wmN, customer_id: cust_yofbJN
+comment: Love it!, rating: 1, date_time: 10/6/2023, product_id: prod_te6wmN, customer_id: cust_HSWmF5
+comment: Great quality, rating: 5, date_time: 7/12/2023, product_id: prod_5AvyHr, customer_id: cust_12M4hi
+comment: Waste of Money, rating: 1, date_time: 11/7/2022, product_id: prod_8oejfT, customer_id: cust_ToCjS6
+comment: Awful, rating: 1, date_time: 2/3/2024, product_id: prod_ps0NH2, customer_id: cust_ToCjS6
+comment: Great quality, rating: 4, date_time: 2/3/2021, product_id: prod_KiBttm, customer_id: cust_yJwfn8
+comment: Waste of Money, rating: 5, date_time: 1/6/2023, product_id: prod_ps0NH2, customer_id: cust_7xDNA2
+comment: Worth the buy, rating: 1, date_time: 2/19/2021, product_id: prod_8oejfT, customer_id: cust_QWHMhl
+comment: Worth the buy, rating: 1, date_time: 5/18/2022, product_id: prod_fkpCI6, customer_id: cust_kRnbp0
+comment: Waste of Money, rating: 3, date_time: 8/23/2023, product_id: prod_sFPRpQ, customer_id: cust_vZnLBP
+comment: Great value, rating: 5, date_time: 9/23/2022, product_id: prod_KiBttm, customer_id: cust_3psuql
+comment: Awful, rating: 1, date_time: 12/8/2023, product_id: prod_kgF4PH, customer_id: cust_xC5DEC
+comment: Worth the buy, rating: 5, date_time: 8/18/2021, product_id: prod_fkpCI6, customer_id: cust_AgDMKM
+comment: Awful, rating: 4, date_time: 7/26/2021, product_id: prod_ps0NH2, customer_id: cust_tDjGd3
+comment: Great quality, rating: 5, date_time: 2/15/2023, product_id: prod_ps0NH2, customer_id: cust_tRQ2ie
+comment: Love it!, rating: 5, date_time: 1/17/2024, product_id: prod_KiBttm, customer_id: cust_DBwv2g
+comment: Great quality, rating: 5, date_time: 2/3/2021, product_id: prod_sFPRpQ, customer_id: cust_3psuql
+comment: Love it!, rating: 4, date_time: 9/16/2021, product_id: prod_KiBttm, customer_id: cust_HnNuLv
+comment: Love it!, rating: 2, date_time: 2/17/2021, product_id: prod_kgF4PH, customer_id: cust_sma0nS
+comment: Waste of Money, rating: 3, date_time: 9/25/2021, product_id: prod_fkpCI6, customer_id: cust_Gf1pG5
+comment: Poor customer service, rating: 4, date_time: 5/27/2022, product_id: prod_5AvyHr, customer_id: cust_onRRwp
+comment: Poor quality, rating: 5, date_time: 11/16/2023, product_id: prod_5AvyHr, customer_id: cust_PvgoWc
+comment: Great value, rating: 2, date_time: 8/31/2021, product_id: prod_ps0NH2, customer_id: cust_YEyTHd
+comment: Love it!, rating: 1, date_time: 2/12/2022, product_id: prod_te6wmN, customer_id: cust_GbiYef
+comment: Great quality, rating: 4, date_time: 1/13/2024, product_id: prod_8oejfT, customer_id: cust_NZOxTB
+comment: Great value, rating: 4, date_time: 5/4/2021, product_id: prod_KiBttm, customer_id: cust_EMLYLa
+comment: Great value, rating: 3, date_time: 6/3/2023, product_id: prod_sFPRpQ, customer_id: cust_ezUNmD
+comment: Waste of Money, rating: 4, date_time: 2/1/2023, product_id: prod_b3wQpJ, customer_id: cust_r4G3OR
+comment: Poor quality, rating: 2, date_time: 12/26/2022, product_id: prod_te6wmN, customer_id: cust_B3Ed3B
+comment: Poor quality, rating: 1, date_time: 7/16/2022, product_id: prod_8oejfT, customer_id: cust_HEvZl9
+comment: Great value, rating: 2, date_time: 4/8/2022, product_id: prod_8oejfT, customer_id: cust_1qVSae
+comment: Awful, rating: 1, date_time: 9/18/2023, product_id: prod_ps0NH2, customer_id: cust_PvgoWc
+comment: Love it!, rating: 5, date_time: 1/15/2024, product_id: prod_sFPRpQ, customer_id: cust_raebu9
+comment: Great value, rating: 2, date_time: 10/20/2023, product_id: prod_8oejfT, customer_id: cust_oACFen
+comment: Awful, rating: 1, date_time: 8/5/2021, product_id: prod_ZBQjP1, customer_id: cust_hVgjmn
+comment: Great value, rating: 2, date_time: 8/25/2021, product_id: prod_KiBttm, customer_id: cust_VaCySy
+comment: Great value, rating: 2, date_time: 11/24/2023, product_id: prod_kgF4PH, customer_id: cust_VwZrkh
+comment: Waste of Money, rating: 3, date_time: 11/24/2023, product_id: prod_8oejfT, customer_id: cust_fw7gq7
+comment: Worth the buy, rating: 5, date_time: 11/24/2022, product_id: prod_kgF4PH, customer_id: cust_YggoQT
+comment: Waste of Money, rating: 3, date_time: 4/16/2021, product_id: prod_b3wQpJ, customer_id: cust_iR6vaI
+comment: Versatile, rating: 3, date_time: 10/29/2023, product_id: prod_5AvyHr, customer_id: cust_3bMgyB
+comment: Love it!, rating: 4, date_time: 12/11/2022, product_id: prod_ps0NH2, customer_id: cust_uyOsYI
+comment: Highly recommend, rating: 4, date_time: 5/6/2021, product_id: prod_ZBQjP1, customer_id: cust_qgo90h
+comment: Awful, rating: 4, date_time: 11/17/2023, product_id: prod_Qt89pW, customer_id: cust_PvgoWc
+comment: Love it!, rating: 3, date_time: 4/5/2021, product_id: prod_kgF4PH, customer_id: cust_Wb16dG
+comment: Poor quality, rating: 2, date_time: 3/23/2022, product_id: prod_fkpCI6, customer_id: cust_R0XIS9
+comment: Great value, rating: 3, date_time: 7/14/2022, product_id: prod_te6wmN, customer_id: cust_QbqsJl
+comment: Great value, rating: 2, date_time: 6/4/2022, product_id: prod_Qt89pW, customer_id: cust_vZnLBP
+comment: Awful, rating: 5, date_time: 2/9/2022, product_id: prod_KiBttm, customer_id: cust_iR6vaI
+comment: Love it!, rating: 2, date_time: 4/26/2021, product_id: prod_ZBQjP1, customer_id: cust_B6tBSo
+comment: Highly recommend, rating: 1, date_time: 11/26/2021, product_id: prod_b3wQpJ, customer_id: cust_QvpuIl
+comment: Great value, rating: 5, date_time: 12/22/2023, product_id: prod_ZBQjP1, customer_id: cust_SUtNUD
+comment: Versatile, rating: 3, date_time: 11/11/2023, product_id: prod_5AvyHr, customer_id: cust_RFUHXR
+comment: Great value, rating: 3, date_time: 9/22/2023, product_id: prod_Qt89pW, customer_id: cust_OUkXBz
+comment: Poor quality, rating: 1, date_time: 3/13/2022, product_id: prod_KiBttm, customer_id: cust_SUtNUD
+comment: Awful, rating: 1, date_time: 12/11/2022, product_id: prod_ZBQjP1, customer_id: cust_3hj1lM
+comment: Great quality, rating: 1, date_time: 10/23/2023, product_id: prod_ps0NH2, customer_id: cust_Gf1pG5
+comment: Waste of Money, rating: 2, date_time: 8/20/2023, product_id: prod_8oejfT, customer_id: cust_euZfry
+comment: Great quality, rating: 2, date_time: 7/14/2023, product_id: prod_ZBQjP1, customer_id: cust_wwEvaN
+comment: Poor customer service, rating: 3, date_time: 12/10/2021, product_id: prod_ZBQjP1, customer_id: cust_LiUQTe
+comment: Poor customer service, rating: 5, date_time: 11/23/2023, product_id: prod_kgF4PH, customer_id: cust_2VGuin
+comment: Great value, rating: 4, date_time: 2/5/2022, product_id: prod_5AvyHr, customer_id: cust_r4G3OR
+comment: Worth the buy, rating: 5, date_time: 2/11/2021, product_id: prod_KiBttm, customer_id: cust_tt1vP2
+comment: Poor customer service, rating: 2, date_time: 5/3/2022, product_id: prod_5AvyHr, customer_id: cust_UG1iaQ
+comment: Awful, rating: 2, date_time: 3/20/2022, product_id: prod_b3wQpJ, customer_id: cust_tt1vP2
+comment: Poor quality, rating: 5, date_time: 3/8/2023, product_id: prod_KiBttm, customer_id: cust_WkFcKo
+comment: Waste of Money, rating: 4, date_time: 10/22/2023, product_id: prod_5AvyHr, customer_id: cust_vAfoiH
+comment: Great value, rating: 5, date_time: 3/5/2022, product_id: prod_sFPRpQ, customer_id: cust_m1MDUS
+comment: Great quality, rating: 4, date_time: 7/21/2023, product_id: prod_ps0NH2, customer_id: cust_YtWxOh
+comment: Awful, rating: 1, date_time: 5/15/2021, product_id: prod_KiBttm, customer_id: cust_0gSoEX
+comment: Great value, rating: 3, date_time: 5/14/2022, product_id: prod_ps0NH2, customer_id: cust_bUKQ2k
+comment: Great quality, rating: 4, date_time: 4/10/2023, product_id: prod_te6wmN, customer_id: cust_bPioau
+comment: Poor quality, rating: 5, date_time: 6/13/2023, product_id: prod_ZBQjP1, customer_id: cust_HEtEQi
+comment: Poor quality, rating: 2, date_time: 3/9/2023, product_id: prod_5AvyHr, customer_id: cust_5wevcH
+comment: Love it!, rating: 5, date_time: 1/3/2022, product_id: prod_Qt89pW, customer_id: cust_XI7GLA
+comment: Love it!, rating: 3, date_time: 4/3/2021, product_id: prod_ZBQjP1, customer_id: cust_3kYeux
+comment: Poor quality, rating: 4, date_time: 5/1/2021, product_id: prod_te6wmN, customer_id: cust_ZhJ2sI
+comment: Worth the buy, rating: 4, date_time: 8/30/2022, product_id: prod_KiBttm, customer_id: cust_EdkHZ1
+comment: Great value, rating: 1, date_time: 7/22/2021, product_id: prod_te6wmN, customer_id: cust_gNSTV9
+comment: Waste of Money, rating: 2, date_time: 11/28/2022, product_id: prod_8oejfT, customer_id: cust_IuGfOK
+comment: Poor quality, rating: 4, date_time: 4/8/2022, product_id: prod_sFPRpQ, customer_id: cust_oxrTGp
+comment: Waste of Money, rating: 4, date_time: 10/5/2022, product_id: prod_fkpCI6, customer_id: cust_nmD1Z0
+comment: Waste of Money, rating: 1, date_time: 2/21/2022, product_id: prod_sFPRpQ, customer_id: cust_tt1vP2
+comment: Great value, rating: 4, date_time: 12/2/2021, product_id: prod_b3wQpJ, customer_id: cust_gNSTV9
+comment: Love it!, rating: 3, date_time: 5/6/2022, product_id: prod_sFPRpQ, customer_id: cust_Mxj9GG
+comment: Poor quality, rating: 4, date_time: 11/16/2022, product_id: prod_5AvyHr, customer_id: cust_SXcEwm
+comment: Worth the buy, rating: 1, date_time: 9/1/2021, product_id: prod_b3wQpJ, customer_id: cust_tDjGd3
+comment: Great value, rating: 5, date_time: 6/2/2022, product_id: prod_kgF4PH, customer_id: cust_ww1Em5
+comment: Versatile, rating: 5, date_time: 10/4/2022, product_id: prod_5AvyHr, customer_id: cust_TaJSep
+comment: Worth the buy, rating: 2, date_time: 2/23/2024, product_id: prod_te6wmN, customer_id: cust_Wb16dG
+comment: Great value, rating: 2, date_time: 7/30/2021, product_id: prod_b3wQpJ, customer_id: cust_A826MH
+comment: Waste of Money, rating: 5, date_time: 5/13/2023, product_id: prod_fkpCI6, customer_id: cust_vZnLBP
+comment: Poor quality, rating: 1, date_time: 5/23/2021, product_id: prod_ps0NH2, customer_id: cust_AHHIaZ
+comment: Great value, rating: 2, date_time: 1/26/2022, product_id: prod_kgF4PH, customer_id: cust_NcTi1V
+comment: Poor quality, rating: 4, date_time: 11/17/2022, product_id: prod_ZBQjP1, customer_id: cust_qRQNVB
+comment: Great value, rating: 1, date_time: 1/18/2024, product_id: prod_te6wmN, customer_id: cust_6bFYyf
+comment: Great quality, rating: 4, date_time: 1/5/2023, product_id: prod_Qt89pW, customer_id: cust_EdkHZ1
+comment: Love it!, rating: 5, date_time: 9/23/2021, product_id: prod_fkpCI6, customer_id: cust_kg51Dz

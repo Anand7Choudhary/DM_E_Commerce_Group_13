@@ -1,12 +1,153 @@
+
 Rows with Null Value (category_id):
-prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+1 : prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
 
 Rows with Null Value (product_name):
-c("prod_KpJ1M6", "prod_H2Rvon"), c("catg_qRQNVB", "catg_EdbxVe"), c("selr_eEoiyG", "selr_Tdz6h0"), c("", ""), c("Graphic t-shirt with a unique design.", "Comfortable and stylish sofa for your living room."), c(24.99, 799.99), c(30, 5)
+1 : prod_KpJ1M6, catg_qRQNVB, selr_eEoiyG, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_H2Rvon, catg_EdbxVe, selr_Tdz6h0, , Comfortable and stylish sofa for your living room., 799.99, 5
 
 Rows with incorrectly formatted values in attribute product_price:
-prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+1 : prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
 
 Rows with incorrectly formatted values in attribute quantity_available:
-prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+1 : prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
 
+Rows with unavailable foreign keys in attribute 'seller_id':
+product_id: prod_94Qttk, category_id: catg_IhJY7N, seller_id: selr_JcKVfU, product_name: Backpack, product_desc: Spacious and durable backpack with comfortable straps., product_price:  49.99, quantity_available:  25
+product_id: prod_c2Xd50, category_id: catg_ENH171, seller_id: selr_HvIpHG, product_name: Highlighter, product_desc: Double-sided highlighter in various colors., product_price:   3.49, quantity_available:  80
+product_id: prod_SdSwsm, category_id: catg_Rnxjfk, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:   5
+product_id: prod_phr7F9, category_id: catg_bAqIxC, seller_id: selr_7cbcrd, product_name: Balloons, product_desc: Bundle of colorful balloons for birthdays, celebrations, and decorations., product_price:   7.99, quantity_available: 100
+
+
+--- New Validation Execution at 2024-03-17 00:08:19 ---
+
+Error: Rows with Null Value (category_id):
+1 : prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KpJ1M6, catg_qRQNVB, selr_eEoiyG, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_H2Rvon, catg_EdbxVe, selr_Tdz6h0, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute product_price:
+1 : prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute quantity_available:
+1 : prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute 'seller_id':
+product_id: prod_94Qttk, category_id: catg_IhJY7N, seller_id: selr_JcKVfU, product_name: Backpack, product_desc: Spacious and durable backpack with comfortable straps., product_price:  49.99, quantity_available:  25
+product_id: prod_c2Xd50, category_id: catg_ENH171, seller_id: selr_HvIpHG, product_name: Highlighter, product_desc: Double-sided highlighter in various colors., product_price:   3.49, quantity_available:  80
+product_id: prod_SdSwsm, category_id: catg_Rnxjfk, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:   5
+product_id: prod_phr7F9, category_id: catg_bAqIxC, seller_id: selr_7cbcrd, product_name: Balloons, product_desc: Bundle of colorful balloons for birthdays, celebrations, and decorations., product_price:   7.99, quantity_available: 100
+
+=============================================================
+------- New Validation Execution at[ 2024-03-17 00:11:52 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KpJ1M6, catg_qRQNVB, selr_eEoiyG, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_H2Rvon, catg_EdbxVe, selr_Tdz6h0, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute product_price:
+1 : prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute quantity_available:
+1 : prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute 'seller_id':
+product_id: prod_94Qttk, category_id: catg_IhJY7N, seller_id: selr_JcKVfU, product_name: Backpack, product_desc: Spacious and durable backpack with comfortable straps., product_price:  49.99, quantity_available:  25
+product_id: prod_c2Xd50, category_id: catg_ENH171, seller_id: selr_HvIpHG, product_name: Highlighter, product_desc: Double-sided highlighter in various colors., product_price:   3.49, quantity_available:  80
+product_id: prod_SdSwsm, category_id: catg_Rnxjfk, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:   5
+product_id: prod_phr7F9, category_id: catg_bAqIxC, seller_id: selr_7cbcrd, product_name: Balloons, product_desc: Bundle of colorful balloons for birthdays, celebrations, and decorations., product_price:   7.99, quantity_available: 100
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 00:12:57 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KpJ1M6, catg_qRQNVB, selr_eEoiyG, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_H2Rvon, catg_EdbxVe, selr_Tdz6h0, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute product_price:
+1 : prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute quantity_available:
+1 : prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute 'seller_id':
+product_id: prod_94Qttk, category_id: catg_IhJY7N, seller_id: selr_JcKVfU, product_name: Backpack, product_desc: Spacious and durable backpack with comfortable straps., product_price:  49.99, quantity_available:  25
+product_id: prod_c2Xd50, category_id: catg_ENH171, seller_id: selr_HvIpHG, product_name: Highlighter, product_desc: Double-sided highlighter in various colors., product_price:   3.49, quantity_available:  80
+product_id: prod_SdSwsm, category_id: catg_Rnxjfk, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:   5
+product_id: prod_phr7F9, category_id: catg_bAqIxC, seller_id: selr_7cbcrd, product_name: Balloons, product_desc: Bundle of colorful balloons for birthdays, celebrations, and decorations., product_price:   7.99, quantity_available: 100
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 00:16:39 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KpJ1M6, catg_qRQNVB, selr_eEoiyG, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_H2Rvon, catg_EdbxVe, selr_Tdz6h0, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (seller_id):
+product_id: prod_94Qttk, category_id: catg_IhJY7N, seller_id: selr_JcKVfU, product_name: Backpack, product_desc: Spacious and durable backpack with comfortable straps., product_price:  49.99, quantity_available:  25
+product_id: prod_c2Xd50, category_id: catg_ENH171, seller_id: selr_HvIpHG, product_name: Highlighter, product_desc: Double-sided highlighter in various colors., product_price:   3.49, quantity_available:  80
+product_id: prod_SdSwsm, category_id: catg_Rnxjfk, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:   5
+product_id: prod_phr7F9, category_id: catg_bAqIxC, seller_id: selr_7cbcrd, product_name: Balloons, product_desc: Bundle of colorful balloons for birthdays, celebrations, and decorations., product_price:   7.99, quantity_available: 100
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 12:52:10 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_b3wQpJ, NA, selr_fuL6vC, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KpJ1M6, catg_qRQNVB, selr_eEoiyG, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_H2Rvon, catg_EdbxVe, selr_Tdz6h0, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_wNXbZr, catg_IhJY7N, selr_MvYo22, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_3PWSYn, catg_Ji7UPq, selr_NbxDkQ, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (seller_id):
+product_id: prod_94Qttk, category_id: catg_IhJY7N, seller_id: selr_JcKVfU, product_name: Backpack, product_desc: Spacious and durable backpack with comfortable straps., product_price:  49.99, quantity_available:  25
+product_id: prod_c2Xd50, category_id: catg_ENH171, seller_id: selr_HvIpHG, product_name: Highlighter, product_desc: Double-sided highlighter in various colors., product_price:   3.49, quantity_available:  80
+product_id: prod_SdSwsm, category_id: catg_Rnxjfk, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:   5
+product_id: prod_phr7F9, category_id: catg_bAqIxC, seller_id: selr_7cbcrd, product_name: Balloons, product_desc: Bundle of colorful balloons for birthdays, celebrations, and decorations., product_price:   7.99, quantity_available: 100
+
+==================================================================
+------- New Validation Execution at [ 2024-03-17 13:00:37 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_G7PtgF, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_UxZnZX, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_sUDV05, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_WyMJ2f, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_X3IGT5, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+Error: Rows with unavailable foreign keys in attribute (seller_id):
+product_id: prod_te6wmN, category_id: catg_h1tZAU, seller_id: selr_knLeEG, product_name: Cookbook, product_desc: A collection of delicious and easy-to-follow recipes., product_price:  24.99, quantity_available: 15
+product_id: prod_b3wQpJ, category_id: catg_L8M7HK, seller_id: selr_7cbcrd, product_name: Guitar, product_desc: Beginner-friendly acoustic guitar with a beautiful natural finish., product_price: 199.99, quantity_available:  5
+product_id: prod_sFPRpQ, category_id: catg_L8M7HK, seller_id: selr_FliXZ7, product_name: Piano Keyboard, product_desc: Portable digital piano keyboard with 88 weighted keys., product_price: 349.99, quantity_available:  3
+product_id: prod_8oejfT, category_id: catg_5oWFU1, seller_id: selr_gXV6Sr, product_name: Jeans, product_desc: Stylish and comfortable jeans in various sizes and washes., product_price:  49.99, quantity_available: 60
+product_id: prod_fkpCI6, category_id: catg_m029MV, seller_id: selr_bmsipD, product_name: Earrings, product_desc: Delicate and elegant earrings for a stylish look., product_price:  39.99, quantity_available: 50
+product_id: prod_ps0NH2, category_id: catg_wNXbZr, seller_id: selr_7cbcrd, product_name: File Cabinet, product_desc: Sturdy file cabinet to organize your documents efficiently., product_price: 149.99, quantity_available:  5
