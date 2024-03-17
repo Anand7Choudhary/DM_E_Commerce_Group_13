@@ -300,6 +300,8 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   append_timestamp_to_log(customer_log_file)
   append_timestamp_to_log(category_log_file)
   append_timestamp_to_log(payment_log_file)
+  append_timestamp_to_log(prod_payment_log_file)
+  append_timestamp_to_log(cust_rev_prod_log_file)
   
  #Seller validation
     #seller_id
@@ -390,20 +392,18 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
   #foreign key deletion
   #On customer deletion
-    payment_data_new<<-validate_fk_availability(payment_data_new,"customer_id",customer_data_new,"customer_id",payment_log_file)
-    customer_review_product_relationship_new<<-validate_fk_availability(customer_review_product_relationship_new,"customer_id",customer_data_new,"customer_id",cust_rev_prod_log_file)
+    payment_data_new<<-validate_fk_availability(payment_data_new,"customer_id",customer_data,"customer_id",payment_log_file)
+    customer_review_product_relationship_new<<-validate_fk_availability(customer_review_product_relationship_new,"customer_id",customer_data,"customer_id",cust_rev_prod_log_file)
   #On payment deletion
-    Product_payment_relationship_data_new<<-validate_fk_availability(Product_payment_relationship_data_new,"payment_id",payment_data_new,"payment_id",prod_payment_log_file)
+    Product_payment_relationship_data_new<<-validate_fk_availability(Product_payment_relationship_data_new,"payment_id",payment_data,"payment_id",prod_payment_log_file)
   #On category deletion
-    product_data_new<<-validate_fk_availability(product_data_new,"category_id",category_data_new,"category_id",product_log_file)
+    product_data_new<<-validate_fk_availability(product_data_new,"category_id",category_data,"category_id",product_log_file)
   #On seller deletion
-    product_data_new<<-validate_fk_availability(product_data_new,"seller_id",seller_data_new,"seller_id",product_log_file)
+    product_data_new<<-validate_fk_availability(product_data_new,"seller_id",seller_data,"seller_id",product_log_file)
   #On product deletion
-    Product_payment_relationship_data_new<<-validate_fk_availability(Product_payment_relationship_data_new,"product_id",product_data_new,"product_id",prod_payment_log_file)
-    customer_review_product_relationship_new<<-validate_fk_availability(customer_review_product_relationship_new,"product_id",product_data_new,"product_id",cust_rev_prod_log_file)
+    Product_payment_relationship_data_new<<-validate_fk_availability(Product_payment_relationship_data_new,"product_id",product_data,"product_id",prod_payment_log_file)
+    customer_review_product_relationship_new<<-validate_fk_availability(customer_review_product_relationship_new,"product_id",product_data,"product_id",cust_rev_prod_log_file)
   print("hey")
-  #seller_data_new,payment_data_new,new_product_data,new_customer_data,new_category_data,Product_payment_relationship_data_new,customer_review_product_relationship_new
-  print(seller_data_new)
   databaseUpdation(seller_data_new,payment_data_new,product_data_new,customer_data_new,category_data_new,Product_payment_relationship_data_new,customer_review_product_relationship_new)
 }
 

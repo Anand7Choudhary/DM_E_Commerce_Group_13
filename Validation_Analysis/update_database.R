@@ -2,6 +2,7 @@ library(RSQLite)
 
 databaseUpdation<- function(seller_data_new,payment_data_new,new_product_data,new_customer_data,new_category_data,Product_payment_relationship_data_new,customer_review_product_relationship_new){
   #seller_data_new,payment_data_new,new_product_data,new_customer_data,new_category_data,Product_payment_relationship_data_new,customer_review_product_relationship_new
+  print("Pikachu")
   seller_data<-seller_data_new
   payment_data<-payment_data_new
   product_data<-new_product_data
