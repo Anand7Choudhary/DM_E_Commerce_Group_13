@@ -35,4 +35,6 @@ dbWriteTable(conn, "customers_review_products_relationship", customers_review_pr
 dbWriteTable(conn, "product_payment_relationship", Product_payment_relationship_data, append = TRUE, overwrite = FALSE)
 #  close the database connection 
 dbDisconnect(conn)
+
+print("Updated new data to the database successfully")
 }
