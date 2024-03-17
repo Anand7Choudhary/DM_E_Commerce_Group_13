@@ -1,18 +1,30 @@
-# Define the path to the README file
-readme_path <- "README.md"
+library(RSQLite)
 
-# Read the current content of the README
-readme_content <- readLines(readme_path, warn = FALSE)
+checkValidation<- function(){
+conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
 
-# Get the current timestamp
-timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
+# Import seller_data into Seller table
+dbWriteTable(conn, "seller", seller_data, append = TRUE, overwrite = FALSE)
 
-# Define the message to append, including the name of the script
-script_name <- "update_db" # Replace with your actual script name
-update_message <- paste0("- ", script_name, " last run at ", timestamp)
+# Import customer_data into Customers table
+dbWriteTable(conn, "customers", customer_data, append = TRUE, overwrite = FALSE)
 
-# Append the update message to the README content
-readme_content <- c(readme_content, update_message)
+# Import category_data into Categories table
+dbWriteTable(conn, "categories", category_data, append = TRUE, overwrite = FALSE)
 
-# Write the updated content back to the README
-writeLines(readme_content, readme_path)
+# Import product_data into Product table
+dbWriteTable(conn, "product", product_data, append = TRUE, overwrite = FALSE)
+
+# Import payment_data into Payment table
+dbWriteTable(conn, "payment", payment_data, append = TRUE, overwrite = FALSE)
+
+# Import customer_review_product_relationship into Customers_review_Products_relationship table
+dbWriteTable(conn, "customers_review_products_relationship", customer_review_product_relationship, append = TRUE, overwrite = FALSE)
+
+# Import Product_payment_relationship_data into Product_payment_relationship table
+dbWriteTable(conn, "product_payment_relationship", Product_payment_relationship_data, append = TRUE, overwrite = FALSE)
+#  close the database connection 
+dbDisconnect(conn)
+}
+
+checkValidation()

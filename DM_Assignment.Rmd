@@ -92,7 +92,6 @@ dbDisconnect(conn)
 
 ```{r get all ID}
 library(DBI)
-library(charlatan)
 library(stringi)
 library(RSQLite)
 library(dplyr)
@@ -204,8 +203,12 @@ product_data$product_id<- product_ids
 #change  category id
 category_data$category_id<-category_ids
 category_data <- subset(category_data, select = -category_id_new)
+
+
 payment_data<-read.csv("data_file/payment.csv")
 payment_data$payment_id<-payment_ids
+
+
 payment_data$customer_id<-sample(customer_ids, size = nrow(payment_data), replace = TRUE)
 #load Product_payment_relationship
 Product_payment_relationship_data <- read.csv("data_file/is_in.csv")

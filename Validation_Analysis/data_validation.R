@@ -3,6 +3,7 @@ library(dplyr)
 library(lubridate)
 library(stringr)
 
+source("Validation_Analysis/update_database.R")
 
 #Function to Check for No Value/Null in Primary Key
 validate_no_null <- function(data, attribute, log_file) {
@@ -246,6 +247,18 @@ append_timestamp_to_log <- function(log_file) {
 
 
 
+get_new_rows <- function(df, db_table_name, primary_key, db_connection) {
+  # Query the database for existing primary keys
+  query <- paste0("SELECT ", primary_key, " FROM ", db_table_name)
+  existing_ids <- dbGetQuery(db_connection, query)
+  # Find the primary keys in the dataframe that are not in the database
+  new_rows <- df %>% filter(!(get(primary_key) %in% existing_ids[[primary_key]]))
+  return(new_rows)
+}
+
+
+
+
 seller_log_file <- "validation_logs/seller_data_log.txt"
 product_log_file<- "validation_logs/product_data_log.txt"
 customer_log_file<- "validation_logs/customer_data_log.txt"
@@ -254,10 +267,22 @@ payment_log_file<- "validation_logs/payment_data_log.txt"
 prod_payment_log_file<- "validation_logs/prod_payment_data_log.txt"
 cust_rev_prod_log_file<- "validation_logs/cust_rev_prod_data_log.txt"
 
-seller_data<-
 
 
 checkValidation<- function(seller_data, customer_data, category_data, product_data, payment_data, customer_review_product_relationship, Product_payment_relationship_data){
+  
+  con <- dbConnect(RSQLite::SQLite(), "path_to_your_database.db")
+  
+  #check for new data in the csv to perform the validation
+  new_seller_data<-get_new_rows(seller_data, "Seller", "seller_id", con)
+  #new_category_data<-
+  #new_product_data<-
+  #new_payment_data<-
+  #new_customer_review_product_relationship<-
+  #new_Product_payment_relationship_data<-
+  
+  dbDisconnect(con)
+  
   
   # time stamp input
   append_timestamp_to_log(seller_log_file)
@@ -268,7 +293,7 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
  #Seller validation
     #seller_id
-  seller_data_new<<-validate_no_null(seller_data,"seller_id",seller_log_file)
+  seller_data_new<<-validate_no_null(new_seller_data,"seller_id",seller_log_file)
   seller_data_new<<-validate_no_duplicate(seller_data_new,"seller_id",seller_log_file)
     #seller_name
   seller_data_new<<-validate_no_null(seller_data_new,"seller_name",seller_log_file)
@@ -367,6 +392,8 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
     Product_payment_relationship_data_new<<-validate_fk_availability(Product_payment_relationship_data_new,"product_id",product_data_new,"product_id",prod_payment_log_file)
     customer_review_product_relationship_new<<-validate_fk_availability(customer_review_product_relationship_new,"product_id",product_data_new,"product_id",cust_rev_prod_log_file)
   print("hey")
+  
+  checkValidation()
 }
 
 
