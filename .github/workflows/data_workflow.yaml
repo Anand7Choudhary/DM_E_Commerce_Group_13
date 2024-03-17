@@ -37,7 +37,7 @@ jobs:
 # Providing the link to file to execute
     - name: Run data mining assignment
       run: |
-          Rscript ../DM_Assignment.rmd
+          Rscript DM_Assignment.Rmd
     - name: Update database with new data
       run: |
           Rscript Validation_Analysis/update_database.R
