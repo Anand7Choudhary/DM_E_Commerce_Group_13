@@ -16,74 +16,90 @@ library(RSQLite)
 conn <- dbConnect(RSQLite::SQLite(), dbname = "DM_assignment.db")
 
 
-# Create Seller table
-dbExecute(conn, 'CREATE TABLE if not exists Seller (
-          seller_id VARCHAR(255)  PRIMARY KEY,
-          seller_name VARCHAR(255) NOT NULL,
-          seller_email VARCHAR(255) NOT NULL UNIQUE,
-          seller_city VARCHAR(100),
-          seller_country VARCHAR(100),
+# Create seller table
+dbExecute(conn, 'CREATE TABLE if not exists seller (
+          seller_id VARCHAR(255)  PRIMARY KEY, 
+          seller_name VARCHAR(255) NOT NULL, 
+          seller_email VARCHAR(255) NOT NULL UNIQUE,  
+          seller_city VARCHAR(100), seller_country VARCHAR(100),
           seller_phone_no VARCHAR(20)
           )')
 
-# Create Product table
-dbExecute(conn, 'CREATE TABLE if not exists Product (
-          product_id VARCHAR(255)  PRIMARY KEY,
-          category_id VARCHAR(255)  NOT NULL,
-          seller_id VARCHAR(255)  NOT NULL,
-          product_name VARCHAR(255) NOT NULL,
-          product_desc TEXT,product_price DECIMAL(10, 2) NOT NULL,
-          quantity_available INT NOT NULL,
-          FOREIGN KEY (category_id) REFERENCES Categories(category_id),
-          FOREIGN KEY (seller_id) REFERENCES Seller(seller_id)
+# Create product table
+dbExecute(conn, 'CREATE TABLE if not exists product (
+          product_id VARCHAR(255)  PRIMARY KEY, 
+          category_id VARCHAR(255)  NOT NULL, 
+          seller_id VARCHAR(255)  NOT NULL, 
+          product_name VARCHAR(255) NOT NULL, 
+          product_desc TEXT,
+          product_price DECIMAL(10, 2) NOT NULL, 
+          quantity_available INT NOT NULL, 
+          FOREIGN KEY (category_id) REFERENCES categories(category_id), 
+          FOREIGN KEY (seller_id) REFERENCES seller(seller_id)
           )')
 
-# Create Customers table
-dbExecute(conn, 'CREATE TABLE if not exists Customers (customer_id VARCHAR(255)  PRIMARY KEY, cust_password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE, first_name VARCHAR(100) NOT NULL, last_name VARCHAR(100) NOT NULL, date_of_birth DATE, gender VARCHAR(20), street VARCHAR(255), house_number VARCHAR(50), city VARCHAR(100), country VARCHAR(100), phone_number VARCHAR(20))')
+# Create customers table
+dbExecute(conn, 'CREATE TABLE if not exists customer (
+          customer_id VARCHAR(255)  PRIMARY KEY, 
+          cust_password VARCHAR(255) NOT NULL, 
+          email VARCHAR(255) NOT NULL UNIQUE, 
+          first_name VARCHAR(100) NOT NULL, 
+          last_name VARCHAR(100) NOT NULL, 
+          date_of_birth DATE, 
+          gender CHAR(1), 
+          street VARCHAR(255), 
+          house_number VARCHAR(50), 
+          city VARCHAR(100), 
+          country VARCHAR(100), 
+          phone_number VARCHAR(20)
+          )')
 
-# Create Categories table
-dbExecute(conn, 'CREATE TABLE if not exists Categories (category_id VARCHAR(255)  PRIMARY KEY, category_name VARCHAR(255) NOT NULL, category_desc TEXT)')
+# Create categories table
+dbExecute(conn, 'CREATE TABLE if not exists category (
+          category_id VARCHAR(255)  PRIMARY KEY, 
+          category_name VARCHAR(255) NOT NULL, 
+          category_desc TEXT
+          )')
 
-# Create Product_payment_relationship
-dbExecute(conn, 'CREATE TABLE IF NOT EXISTS Product_payment_relationship (
-    product_id VARCHAR(255),
-    payment_id VARCHAR(255),
-    quantity INT NOT NULL,
-    PRIMARY KEY (product_id, payment_id),
-    FOREIGN KEY (product_id) REFERENCES Product(product_id),
-    FOREIGN KEY (payment_id) REFERENCES Payment(payment_id)
-)')
-
-# Create Payment table
-dbExecute(conn, 'CREATE TABLE if not exists Payment (
-    payment_id VARCHAR(255) PRIMARY KEY, 
-    customer_id VARCHAR(255),
-    payment_type VARCHAR(50), 
-    payment_status VARCHAR(50), 
-    date_time DATETIME,
-    card_number VARCHAR(20),
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
-)')
-
-#CREATE Customers_review_Products_relationship TABLE
-dbExecute(conn, 'CREATE TABLE if not exists Customers_review_Products_relationship (
-    customer_id VARCHAR(255) NOT NULL,
-    product_id VARCHAR(255) NOT NULL,
-    comment TEXT,
-    rating INT NOT NULL,
-    date_time DATETIME,
-    PRIMARY KEY (customer_id, product_id),
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
-    FOREIGN KEY (product_id) REFERENCES Product(product_id)
-)')
+# Create product_payment_relationship
+dbExecute(conn, 'CREATE TABLE IF NOT EXISTS product_payment_relationship (
+          product_id VARCHAR(255),
+          payment_id VARCHAR(255),
+          quantity INT NOT NULL,
+          PRIMARY KEY (product_id, payment_id),
+          FOREIGN KEY (product_id) REFERENCES product(product_id),
+          FOREIGN KEY (payment_id) REFERENCES payment(payment_id)
+          )')
 
 
+
+
+# Create payment table
+dbExecute(conn, 'CREATE TABLE if not exists payment (
+          payment_id VARCHAR(255) PRIMARY KEY, 
+          customer_id VARCHAR(255),
+          payment_type VARCHAR(50), 
+          payment_status VARCHAR(50), 
+          date_time DATETIME,
+          card_number VARCHAR(20),
+          FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+          )')
+
+
+#CREATE customers_review_products_relationship TABLE
+dbExecute(conn, 'CREATE TABLE if not exists customers_review_products_relationship (
+          customer_id VARCHAR(255) NOT NULL,
+          product_id VARCHAR(255) NOT NULL,
+          comment TEXT,
+          rating INT NOT NULL,
+          date_time DATETIME,
+          PRIMARY KEY (customer_id, product_id),
+          FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
+          FOREIGN KEY (product_id) REFERENCES product(product_id)
+           )')
 
 # List all tables in the database connection
 tables <- dbListTables(conn)
-
-# Print the list of table names
-print(tables)
 
 #  close the database connection 
 dbDisconnect(conn)

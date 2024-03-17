@@ -35,7 +35,7 @@ jobs:
     # Installing the necessary Packages  
     - name: Install R packages
       run: |
-        Rscript -e 'install.packages(c("grid","gridExtra","DBI", "RSQLite", "ggplot2", "lubridate", "readr", "rmarkdown","dplyr","tidyverse","scales","RMySQL"), dependencies = TRUE)'
+        Rscript -e 'install.packages(c("grid","gridExtra","DBI", "RSQLite", "ggplot2", "lubridate", "readr", "rmarkdown","dplyr","scales","RMySQL"), dependencies = TRUE)'
 
     # Providing the link to file to execute
     - name: Run data mining assignment

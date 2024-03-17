@@ -283,14 +283,14 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   
   #check for new data in the csv to perform the validation
   new_seller_data<-get_new_rows(seller_data, "seller", "seller_id", con)
-  new_customer_data<-get_new_rows(customer_data, "customers", "customer_id", con)
-  new_category_data<-get_new_rows(category_data, "categories", "category_id", con)
+  new_customer_data<-get_new_rows(customer_data, "customer", "customer_id", con)
+  new_category_data<-get_new_rows(category_data, "category", "category_id", con)
   new_product_data<-get_new_rows(product_data, "product", "product_id", con)
   new_payment_data<-get_new_rows(payment_data, "payment", "payment_id", con)
   primary_keys_for_review <- c("customer_id", "product_id")
-  new_customer_review_data <- get_new_rows_for_composite_key(customer_review_product_relationship, "Customers_review_Products_relationship", primary_keys_for_review, con)
+  new_customer_review_data <- get_new_rows_for_composite_key(customer_review_product_relationship, "customers_review_products_relationship", primary_keys_for_review, con)
   primary_keys_for_payment <- c("product_id", "payment_id")
-  new_product_payment_data <- get_new_rows_for_composite_key(Product_payment_relationship_data, "Product_payment_relationship", primary_keys_for_payment, con)
+  new_product_payment_data <- get_new_rows_for_composite_key(Product_payment_relationship_data, "product_payment_relationship", primary_keys_for_payment, con)
   dbDisconnect(con)
   
   
@@ -403,7 +403,7 @@ checkValidation<- function(seller_data, customer_data, category_data, product_da
   #On product deletion
     Product_payment_relationship_data_new<<-validate_fk_availability(Product_payment_relationship_data_new,"product_id",product_data,"product_id",prod_payment_log_file)
     customer_review_product_relationship_new<<-validate_fk_availability(customer_review_product_relationship_new,"product_id",product_data,"product_id",cust_rev_prod_log_file)
-  print("hey")
+  print("Validation Performed")
   databaseUpdation(seller_data_new,payment_data_new,product_data_new,customer_data_new,category_data_new,Product_payment_relationship_data_new,customer_review_product_relationship_new)
 }
 

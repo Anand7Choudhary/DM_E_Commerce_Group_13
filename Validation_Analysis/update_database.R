@@ -1,8 +1,8 @@
 library(RSQLite)
 
 databaseUpdation<- function(seller_data_new,payment_data_new,new_product_data,new_customer_data,new_category_data,Product_payment_relationship_data_new,customer_review_product_relationship_new){
-  #seller_data_new,payment_data_new,new_product_data,new_customer_data,new_category_data,Product_payment_relationship_data_new,customer_review_product_relationship_new
-  print("Pikachu")
+
+  # Collecting the valid data
   seller_data<-seller_data_new
   payment_data<-payment_data_new
   product_data<-new_product_data
@@ -17,10 +17,10 @@ databaseUpdation<- function(seller_data_new,payment_data_new,new_product_data,ne
 dbWriteTable(conn, "seller", seller_data, append = TRUE, overwrite = FALSE)
 
 # Import customer_data into Customers table
-dbWriteTable(conn, "customers", customer_data, append = TRUE, overwrite = FALSE)
+dbWriteTable(conn, "customer", customer_data, append = TRUE, overwrite = FALSE)
 
 # Import category_data into Categories table
-dbWriteTable(conn, "categories", category_data, append = TRUE, overwrite = FALSE)
+dbWriteTable(conn, "category", category_data, append = TRUE, overwrite = FALSE)
 
 # Import product_data into Product table
 dbWriteTable(conn, "product", product_data, append = TRUE, overwrite = FALSE)

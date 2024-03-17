@@ -1,5 +1,5 @@
 ---
-title: "Visualizations"
+title: "Final_Load"
 output: html_document
 date: "2024-03-17"
 ---
@@ -7,10 +7,14 @@ date: "2024-03-17"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+library(DBI)
+library(charlatan)
+library(stringi)
 library(RSQLite)
 library(dplyr)
-library(tidyverse)
+library(ggplot2)
 library(scales)
+
 ```
 
 # Analysis on the database
@@ -19,7 +23,7 @@ First, we connect to the SQL database
 ```{r viz}
 
 # Reconnect to the database 
-conn <- RSQLite::dbConnect(RSQLite::SQLite(), dbname = "DM_assignment_Final_version.db")
+conn <- RSQLite::dbConnect(RSQLite::SQLite(), dbname = "../DM_assignment.db")
 
 ```
 
@@ -75,7 +79,7 @@ ON payment.payment_id = ppr.payment_id;
 
 CREATE VIEW IF NOT EXISTS review_w_category AS 
 SELECT crp.product_id, crp.date_time, crp.rating, product_w_categ_seller.category_name
-FROM customers_review_products_relationship AS crp
+FROM Customers_review_Products_relationship AS crp
 LEFT JOIN product_w_categ_seller
 ON product_w_categ_seller.product_id = crp.product_id;
 
@@ -99,11 +103,20 @@ ON product_w_categ_seller.product_id = ppr.product_id;
 CREATE VIEW IF NOT EXISTS product_w_categ_seller AS 
 SELECT product.product_id, product_name, product_price, quantity_available, category_name, seller.seller_id
 FROM product
-LEFT JOIN categories
-ON product.category_id = categories.category_id
+LEFT JOIN category
+ON product.category_id = category.category_id
 LEFT JOIN seller
 ON seller.seller_id = product.seller_id;
 
+
+```
+
+
+```{sql connection=conn}
+
+SELECT * 
+FROM category
+LIMIT 10;
 
 ```
 
@@ -153,6 +166,15 @@ rating_by_cat <- ggplot(review_summ, aes(x=reorder(category_name, avg_score, dec
   labs(x='Category', y='Average Score', title='Average Rating Score by Category', subtitle = 'Across all years')
 rating_by_cat
 
+# Save images as new file each time the process runs 
+
+this_filename_date <- as.character(Sys.Date())
+# format the Sys.time() to show only hours and minutes 
+this_filename_time <- as.character(format(Sys.time(), format = "%H_%M"))
+ggsave(paste0("../Images/AvgRatingScore_",
+              this_filename_date,"_",
+              this_filename_time,".png"))
+
 ```
 
 ```{r}
@@ -171,6 +193,10 @@ top_categories <- ggplot(payment_summ, aes(x=reorder(prod_category, total_ordere
   labs(x='Category', y='Total Sales [GBP]', title='Sales by Category', subtitle = 'Across all years') + 
   scale_y_continuous(labels = label_comma())
 top_categories
+
+ggsave(paste0("../Images/SalesByCategory_",
+              this_filename_date,"_",
+              this_filename_time,".png"))
 
 ```
 
@@ -197,7 +223,9 @@ plot_top_sellers <- ggplot(sales_top_sellers, aes(x=reorder(seller_name, total_s
   coord_flip()
 plot_top_sellers
 
-
+ggsave(paste0("../Images/Top20Sellers_",
+              this_filename_date,"_",
+              this_filename_time,".png"))
 
 ```
 
@@ -206,7 +234,7 @@ plot_top_sellers
 
 prod_cat <- DBI::dbGetQuery(conn, "SELECT a.product_id,a.product_name, a.category_id, a.product_price, a.quantity_available, b.category_name, c.quantity
 FROM product a
-LEFT JOIN categories b ON a.category_id = b.category_id
+LEFT JOIN category b ON a.category_id = b.category_id
 LEFT JOIN product_payment_relationship c ON a.product_id = c.product_id")
 
 #Calculate Sales
@@ -227,6 +255,14 @@ rev_prod_plt <- ggplot(rev_prod, aes(y = reorder(paste(product_name, product_id)
 
 rev_prod_plt
 
+# Save images as new file each time the process runs
+this_filename_date <- as.character(Sys.Date())
+# format the Sys.time() to show only hours and minutes 
+this_filename_time <- as.character(format(Sys.time(), format = "%H_%M"))
+
+ggsave(paste0("../Images/Top10Products_",
+              this_filename_date,"_",
+              this_filename_time,".png"), plot = rev_prod_plt)
 ```
 
 ```{r}
@@ -252,8 +288,11 @@ revenue_review_plt <- ggplot(review_revenue, aes(y = reorder(paste(product_name,
 
 revenue_review_plt
 
-```
+ggsave(paste0("../Images/Top10ProductsRating_",
+              this_filename_date,"_",
+              this_filename_time,".png"), plot = revenue_review_plt)
 
+```
 
 ```{r}
 #Payment Type-Orders
@@ -274,5 +313,11 @@ paytype_plt <- ggplot(order_payment, aes(x = payment_type, y = number_order)) +
 
 paytype_plt
 
+ggsave(paste0("../Images/PaymentType_",
+              this_filename_date,"_",
+              this_filename_time,".png"), plot = paytype_plt)
+
 ```
+
+
 
