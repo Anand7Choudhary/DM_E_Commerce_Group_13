@@ -153,7 +153,7 @@ this_filename_time <- as.character(format(Sys.time(), format = "%H_%M"))
 # Generate timestamp for folder name
 timestamp_folder <- paste0("images_on_", this_filename_date, "_", this_filename_time)
 # Create the folder if it doesn't exist
-dir.create(paste0("../Images/", timestamp_folder), showWarnings = FALSE)
+dir.create(paste0("Images/", timestamp_folder), showWarnings = FALSE)
 ```
 
 
@@ -175,7 +175,7 @@ rating_by_cat
 
 # Save images as new file each time the process runs 
 
-ggsave(paste0("../Images/", timestamp_folder, "/AvgRatingScore.png"), plot = rating_by_cat)
+ggsave(paste0("../Images/", timestamp_folder, "/AvgRatingScore.png"), plot = rating_by_cat, create.dir = TRUE)
 
 ```
 
@@ -196,7 +196,7 @@ top_categories <- ggplot(payment_summ, aes(x=reorder(prod_category, total_ordere
   scale_y_continuous(labels = label_comma())
 top_categories
 
-ggsave(paste0("../Images/", timestamp_folder, "/SalesByCategory.png"), plot = top_categories)
+ggsave(paste0("../Images/", timestamp_folder, "/SalesByCategory.png"), plot = top_categories, create.dir = TRUE)
 
 ```
 
@@ -223,7 +223,7 @@ plot_top_sellers <- ggplot(sales_top_sellers, aes(x=reorder(seller_name, total_s
   coord_flip()
 plot_top_sellers
 
-ggsave(paste0("../Images/", timestamp_folder, "/Top20Sellers.png"), plot = plot_top_sellers)
+ggsave(paste0("../Images/", timestamp_folder, "/Top20Sellers.png"), plot = plot_top_sellers, create.dir = TRUE)
 
 ```
 
@@ -267,7 +267,7 @@ revenue_review_plt <- ggplot(review_revenue, aes(y = reorder(paste(product_name)
 
 revenue_review_plt
 
-ggsave(paste0("../Images/", timestamp_folder, "/Top10ProductsRating.png"), plot = revenue_review_plt)
+ggsave(paste0("../Images/", timestamp_folder, "/Top10ProductsRating.png"), plot = revenue_review_plt, create.dir = TRUE)
 
 ```
 
@@ -292,7 +292,7 @@ paytype_plt <- ggplot(order_payment, aes(x = payment_type, y = number_order)) +
 
 paytype_plt
 
-ggsave(paste0("../Images/", timestamp_folder, "/PaymentType.png"), plot = paytype_plt)
+ggsave(paste0("../Images/", timestamp_folder, "/PaymentType.png"), plot = paytype_plt, create.dir = TRUE)
 
 ```
 
@@ -327,7 +327,7 @@ revenue_last_3m_plt <- ggplot(revenue_last_3m, aes(x = date_time, y = revenue)) 
 
 revenue_last_3m_plt
 
-ggsave(paste0("../Images/", timestamp_folder, "/SalesLast3m.png"), plot = revenue_last_3m_plt)
+ggsave(paste0("../Images/", timestamp_folder, "/SalesLast3m.png"), plot = revenue_last_3m_plt, create.dir = TRUE)
 
 ```
 
