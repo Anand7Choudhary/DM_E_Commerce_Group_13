@@ -146,6 +146,14 @@ df_seller_data <- RSQLite::dbGetQuery(conn,"SELECT seller_id, seller_name, selle
 df_payments_sellers$date_time <- as.Date(df_payments_sellers$date_time, format = "%m/%d/%Y")
 df_review_w_category$date_time <- as.Date(df_review_w_category$date_time, format = "%m/%d/%Y")
 
+
+# Image Folder creation
+this_filename_date <- as.character(Sys.Date())
+this_filename_time <- as.character(format(Sys.time(), format = "%H_%M"))
+# Generate timestamp for folder name
+timestamp_folder <- paste0("images_on_", this_filename_date, "_", this_filename_time)
+# Create the folder if it doesn't exist
+dir.create(paste0("../Images/", timestamp_folder), showWarnings = FALSE)
 ```
 
 
@@ -167,12 +175,7 @@ rating_by_cat
 
 # Save images as new file each time the process runs 
 
-this_filename_date <- as.character(Sys.Date())
-# format the Sys.time() to show only hours and minutes 
-this_filename_time <- as.character(format(Sys.time(), format = "%H_%M"))
-ggsave(paste0("../Images/AvgRatingScore_",
-              this_filename_date,"_",
-              this_filename_time,".png"))
+ggsave(paste0("../Images/", timestamp_folder, "/AvgRatingScore.png"), plot = rating_by_cat)
 
 ```
 
@@ -193,9 +196,7 @@ top_categories <- ggplot(payment_summ, aes(x=reorder(prod_category, total_ordere
   scale_y_continuous(labels = label_comma())
 top_categories
 
-ggsave(paste0("../Images/SalesByCategory_",
-              this_filename_date,"_",
-              this_filename_time,".png"))
+ggsave(paste0("../Images/", timestamp_folder, "/SalesByCategory.png"), plot = top_categories)
 
 ```
 
@@ -222,14 +223,17 @@ plot_top_sellers <- ggplot(sales_top_sellers, aes(x=reorder(seller_name, total_s
   coord_flip()
 plot_top_sellers
 
-ggsave(paste0("../Images/Top20Sellers_",
-              this_filename_date,"_",
-              this_filename_time,".png"))
+ggsave(paste0("../Images/", timestamp_folder, "/Top20Sellers.png"), plot = plot_top_sellers)
 
 ```
 
 ```{r}
-#Top 10 sales products
+#Top 10 Sales with rating
+
+prod <- DBI::dbGetQuery(conn, "SELECT * FROM product")
+review <- DBI::dbGetQuery(conn, "SELECT a.product_id, a.rating, a.date_time, b.product_name 
+FROM customers_review_products_relationship a 
+LEFT JOIN product b ON a.product_id = b.product_id")
 
 prod_cat <- DBI::dbGetQuery(conn, "SELECT a.product_id,a.product_name, a.category_id, a.product_price, a.quantity_available, b.category_name, c.quantity
 FROM product a
@@ -248,30 +252,6 @@ rev_prod <- revenue %>%
   slice_max(order_by = total_revenue, n = 10) %>%
   arrange(desc(total_revenue))
 
-#Plot
-rev_prod_plt <- ggplot(rev_prod, aes(y = reorder(paste(product_name, product_id), total_revenue), x = total_revenue, fill = as.factor(category_name))) +
-  geom_bar(stat = "identity") + labs(x="Sales", y="Product", title = "Top 10 Product Sales", fill = "Category")
-
-rev_prod_plt
-
-# Save images as new file each time the process runs
-this_filename_date <- as.character(Sys.Date())
-# format the Sys.time() to show only hours and minutes 
-this_filename_time <- as.character(format(Sys.time(), format = "%H_%M"))
-
-ggsave(paste0("../Images/Top10Products_",
-              this_filename_date,"_",
-              this_filename_time,".png"), plot = rev_prod_plt)
-```
-
-```{r}
-#Top 10 Sales with rating
-
-prod <- DBI::dbGetQuery(conn, "SELECT * FROM product")
-review <- DBI::dbGetQuery(conn, "SELECT a.product_id, a.rating, a.date_time, b.product_name 
-FROM customers_review_products_relationship a 
-LEFT JOIN product b ON a.product_id = b.product_id")
-
 #Calculate average rating
 avg_review <- review %>%
   group_by(product_id) %>%
@@ -281,17 +261,17 @@ avg_review <- review %>%
 review_revenue <- left_join(rev_prod, avg_review, by = "product_id")
 
 #Plot
-revenue_review_plt <- ggplot(review_revenue, aes(y = reorder(paste(product_name,product_id),total_revenue), x = total_revenue, size = avg_rev)) +
+revenue_review_plt <- ggplot(review_revenue, aes(y = reorder(paste(product_name),total_revenue), x = total_revenue, size = avg_rev, col = category_name)) +
   geom_point() +  
-  scale_size_continuous(range = c(2, 10)) + labs(title= "Top 10 Sales with Rating",x="Sales", y="Product", , size = "Average Rating")
+  scale_size_continuous(range = c(2, 10)) + labs(title= "Top 10 Product Sales with Rating",x="Sales", y="Product", , size = "Average Rating",col="Category")
 
 revenue_review_plt
 
-ggsave(paste0("../Images/Top10ProductsRating_",
-              this_filename_date,"_",
-              this_filename_time,".png"), plot = revenue_review_plt)
+ggsave(paste0("../Images/", timestamp_folder, "/Top10ProductsRating.png"), plot = revenue_review_plt)
 
 ```
+
+
 
 ```{r}
 #Payment Type-Orders
@@ -312,9 +292,42 @@ paytype_plt <- ggplot(order_payment, aes(x = payment_type, y = number_order)) +
 
 paytype_plt
 
-ggsave(paste0("../Images/PaymentType_",
-              this_filename_date,"_",
-              this_filename_time,".png"), plot = paytype_plt)
+ggsave(paste0("../Images/", timestamp_folder, "/PaymentType.png"), plot = paytype_plt)
+
+```
+
+
+
+
+```{r}
+#revenue growth
+revenue_growth <- DBI::dbGetQuery(conn, "SELECT a.payment_id, b.date_time, a.product_id, a.quantity, c.product_name, c.product_price 
+FROM product_payment_relationship a 
+LEFT JOIN payment b ON a.payment_id = b.payment_id
+LEFT JOIN product c ON a.product_id = a.product_id")
+
+revenue_all <- revenue_growth %>%
+  group_by(date_time) %>%
+  summarise(revenue = sum(quantity*product_price))
+
+revenue_all$date_time <- as.Date(revenue_all$date_time, format = "%m/%d/%Y")
+
+# Calculate the start date as 3 months ago from today
+start_date <- Sys.Date() %m-% months(3)
+
+# End date will be today
+end_date <- Sys.Date()
+
+# Filter the data for the last 3 months
+revenue_last_3m <- revenue_all %>%
+  filter(date_time >= start_date & date_time <= end_date)
+
+#Plot
+revenue_last_3m_plt <- ggplot(revenue_last_3m, aes(x = date_time, y = revenue)) + geom_line() + geom_smooth(method = "loess") + labs(x="Date", y="Sales", title="Overall Sales For Last 3 months") + scale_y_continuous(labels = scales::comma)
+
+revenue_last_3m_plt
+
+ggsave(paste0("../Images/", timestamp_folder, "/SalesLast3m.png"), plot = revenue_last_3m_plt)
 
 ```
 

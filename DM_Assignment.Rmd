@@ -1,6 +1,6 @@
 ---
 title: "DM-assignment"
-author: "Leo Song"
+author: "Group-13"
 date: "2024-02-27"
 output: html_document
 ---
@@ -258,12 +258,6 @@ final_assignments <- rbind(initial_assignments, additional_assignments)
 
 # Check for duplicates based on 'product_id' and 'payment_id'
 duplicates <- duplicated(Product_payment_relationship_data[c("product_id", "payment_id")])
-
-# Count the number of duplicates
-num_duplicates <- sum(duplicates)
-
-# Print the number of duplicate rows found
-print(paste("Number of duplicate rows:", num_duplicates))
 
 ```
 
