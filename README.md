@@ -17,6 +17,7 @@ This project simulates a real-world e-commerce data environment, encompassing en
 - [GitHub Repository and Workflow Setup](#github-repository-and-workflow-setup)
 - [Data Analysis and Reporting with Quarto in R](#data-analysis-and-reporting-with-quarto-in-r)
 - [Logging Invalid Data Entries](#logging-invalid-data-entries)
+- [Contributors](#contributors)
 
 ## Database Design and Implementation
 
@@ -53,3 +54,6 @@ Advanced data analysis is conducted using R, and comprehensive reporting is done
 ## Logging Invalid Data Entries
 
 Each table entity is associated with a log file that stores the list of rows that did not pass validation. These log files are generated and updated via a GitHub Action whenever data is imported or validated.
+
+## Contributors
+
