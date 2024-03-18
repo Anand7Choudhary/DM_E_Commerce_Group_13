@@ -56,4 +56,10 @@ Advanced data analysis is conducted using R, and comprehensive reporting is done
 Each table entity is associated with a log file that stores the list of rows that did not pass validation. These log files are generated and updated via a GitHub Action whenever data is imported or validated.
 
 ## Contributors
-
+Student IDs:
+5574880
+5530977
+5559080
+5544050
+5566351
+2241957
