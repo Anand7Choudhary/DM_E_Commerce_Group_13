@@ -126,7 +126,11 @@ Error: Rows with invalid or future dates in attribute (date_time):
 1006:Great quality, 3, 00-02-2023, 32, 157
 
 ==================================================================
+<<<<<<< HEAD
 ------- New Validation Execution at [ 2024-03-17 23:50:36 ]-------
+=======
+------- New Validation Execution at [ 2024-03-17 18:57:27 ]-------
+>>>>>>> 96616bf07a477ad5a016bb363b131a6c3cab3797
 
 Error: Rows with out-of-range ratings in attribute (rating):
 1 : Awful, 0, 9/25/2022, 74, 137
@@ -140,7 +144,11 @@ Error: Rows with invalid or future dates in attribute (date_time):
 5:Great quality, 3, 00-02-2023, 32, 157
 
 ==================================================================
+<<<<<<< HEAD
 ------- New Validation Execution at [ 2024-03-18 00:26:27 ]-------
+=======
+------- New Validation Execution at [ 2024-03-17 21:17:37 ]-------
+>>>>>>> 96616bf07a477ad5a016bb363b131a6c3cab3797
 
 Error: Rows with out-of-range ratings in attribute (rating):
 1 : Awful, 0, 9/25/2022, 74, 137

@@ -270,7 +270,11 @@ Error: Rows with invalid phone format (seller_phone_no):
 1 : Wilkinson, Beier and Ebert, lschimke5@nih.gov, 999-874-4492/, United Kingdom, Ford, selr_SGIVBl
 
 ==================================================================
+<<<<<<< HEAD
 ------- New Validation Execution at [ 2024-03-17 23:50:36 ]-------
+=======
+------- New Validation Execution at [ 2024-03-17 18:57:27 ]-------
+>>>>>>> 96616bf07a477ad5a016bb363b131a6c3cab3797
 
 Error: Rows with Null Value (seller_name):
 1 : , bbilsford0@intel.com, 319-296-8229, United Kingdom, Merton, selr_7cbcrd
@@ -300,7 +304,11 @@ Error: Rows with invalid phone format (seller_phone_no):
 1 : Wilkinson, Beier and Ebert, lschimke5@nih.gov, 999-874-4492/, United Kingdom, Ford, selr_SGIVBl
 
 ==================================================================
+<<<<<<< HEAD
 ------- New Validation Execution at [ 2024-03-18 00:26:27 ]-------
+=======
+------- New Validation Execution at [ 2024-03-17 21:17:37 ]-------
+>>>>>>> 96616bf07a477ad5a016bb363b131a6c3cab3797
 
 Error: Rows with Null Value (seller_name):
 1 : , bbilsford0@intel.com, 319-296-8229, United Kingdom, Merton, selr_7cbcrd
