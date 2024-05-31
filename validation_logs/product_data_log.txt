@@ -1446,3 +1446,19 @@ Error: Rows with incorrectly formatted values in attribute (product_price):
 
 Error: Rows with incorrectly formatted values in attribute (quantity_available):
 1 : prod_Qt89pW, catg_dgFCjr, selr_0lCgkE, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
+
+==================================================================
+------- New Validation Execution at [ 2024-05-31 00:40:27 ]-------
+
+Error: Rows with Null Value (category_id):
+1 : prod_kgF4PH, NA, selr_jsxCTN, Sticky Notes, Colorful and adhesive sticky notes for reminders and messages., 4.99, 60
+
+Error: Rows with Null Value (product_name):
+1 : prod_KiBttm, catg_5oWFU1, selr_Fmzxkg, , Graphic t-shirt with a unique design., 24.99, 30
+2 : prod_5AvyHr, catg_l5PRB7, selr_guMc2e, , Comfortable and stylish sofa for your living room., 799.99, 5
+
+Error: Rows with incorrectly formatted values in attribute (product_price):
+1 : prod_ZBQjP1, catg_2XcswD, selr_0lCgkE, T-shirt, Soft cotton t-shirt in various sizes and colors., -19.99, 50
+
+Error: Rows with incorrectly formatted values in attribute (quantity_available):
+1 : prod_Qt89pW, catg_dgFCjr, selr_0lCgkE, Baby Wipes, Gentle and hypoallergenic baby wipes for cleaning and soothing., 8.99, 50.3
