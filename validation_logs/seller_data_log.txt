@@ -2487,3 +2487,33 @@ Error: Rows with invalid email format in attribute (seller_email):
 
 Error: Rows with invalid phone format (seller_phone_no):
 1 : Wilkinson, Beier and Ebert, lschimke5@nih.gov, 999-874-4492/, United Kingdom, Ford, selr_SGIVBl
+
+==================================================================
+------- New Validation Execution at [ 2024-06-13 00:42:29 ]-------
+
+Error: Rows with Null Value (seller_name):
+1 : , bbilsford0@intel.com, 319-296-8229, United Kingdom, Merton, selr_7cbcrd
+2 : , broelofsend@blogs.com, 248-273-7924, United Kingdom, Bristol, selr_JfvT8X
+
+Error: Rows with duplicated attribute (seller_email):
+1 : Murphy Group, ccollinson7@bloomberg.com, 467-628-0900, United Kingdom, Birmingham, selr_JcKVfU
+2 : Langworth-Weimann, ccollinson7@bloomberg.com, 535-948-5388, United Kingdom, Burnside, selr_Fl4JiV
+3 : Beer, Haag and Mitchell, jcrowley83@google.co.uk, 323-730-2085, United Kingdom, Upton, selr_bN3hld
+4 : Hodkiewicz, Skiles and Hahn, pthamelt84@dailymotion.com, 519-173-9313, United Kingdom, Newton, selr_bmsipD
+5 : Shanahan, Nolan and Klocko, mmerriment85@ehow.com, 352-947-6072, United Kingdom, Middleton, selr_IxJ39N
+6 : Veum, Konopelski and Ortiz, hsapwell87@state.tx.us, 519-815-7970, United Kingdom, Middleton, selr_pE2WnZ
+7 : Howe, Pfeffer and Hilll, fitzkovici88@mashable.com, 310-841-6431, United Kingdom, Eaton, selr_qVjrCn
+8 : Beer, Haag and Mitchell, jcrowley83@google.co.uk, 323-730-2085, United Kingdom, Upton, selr_0eKM49
+9 : Hodkiewicz, Skiles and Hahn, pthamelt84@dailymotion.com, 519-173-9313, United Kingdom, Newton, selr_i6Kwof
+10 : Shanahan, Nolan and Klocko, mmerriment85@ehow.com, 352-947-6072, United Kingdom, Middleton, selr_gXV6Sr
+11 : Veum, Konopelski and Ortiz, hsapwell87@state.tx.us, 519-815-7970, United Kingdom, Middleton, selr_knLeEG
+12 : Howe, Pfeffer and Hilll, fitzkovici88@mashable.com, 310-841-641, United Kingdom, Eaton, selr_NEyv2e
+
+Error: Rows with invalid email format in attribute (seller_email):
+1 : Corkery LLC, wca2@ny@times.com, 597-299-8102, United Kingdom, Glasgow, selr_HvIpHG
+2 : Homenick-Botsford, ostannard6@furl.net., 186-884-5750(), United Kingdom, Stapleford, selr_CGzoYe
+3 : Murray, Bartoletti and Kutch, cdunk8@6@amazon.co.uk, 509-166-0340, United Kingdom, Horton, selr_MwZe8G
+4 : Fahey, Fahey and Johns, fjellings8b@netscape.com., 489-594-7823, United Kingdom, Middleton, selr_FliXZ7
+
+Error: Rows with invalid phone format (seller_phone_no):
+1 : Wilkinson, Beier and Ebert, lschimke5@nih.gov, 999-874-4492/, United Kingdom, Ford, selr_SGIVBl
