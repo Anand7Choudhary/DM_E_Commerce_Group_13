@@ -2680,3 +2680,17 @@ Error: Rows with invalid or future dates in attribute (date_time):
 3:Versatile, 4, 1/0/2023, 8, 256
 4:Love it!, 2, 14/29/2023, 1, 2
 5:Great quality, 3, 00-02-2023, 32, 157
+
+==================================================================
+------- New Validation Execution at [ 2024-09-10 00:47:11 ]-------
+
+Error: Rows with out-of-range ratings in attribute (rating):
+1 : Awful, 0, 9/25/2022, 74, 137
+2 : Great quality, 8, 10/16/2022, 85, 159
+
+Error: Rows with invalid or future dates in attribute (date_time):
+1:Love it!, 5, 9/23/2030, 61, 155
+2:Highly recommend, 2, 1/78/2023, 48, 209
+3:Versatile, 4, 1/0/2023, 8, 256
+4:Love it!, 2, 14/29/2023, 1, 2
+5:Great quality, 3, 00-02-2023, 32, 157
